@@ -3,6 +3,9 @@
 Dieses Verzeichnis hält begründete Entscheidungen zur Struktur, Didaktik und technischen Infrastruktur des internen Authoring-Repositories fest.
 Es soll zukünftige Arbeit mit menschlichen und AI-Agenten erleichtern.
 
+`DECISIONS/` ist für stabile Grundsatzentscheidungen gedacht.
+Veränderliche Kursplanung und offene Ideen gehören nach `_instructor/Kursplanung.md` bzw. `_instructor/Ideen_und_Todos.md`.
+
 ## Index
 
 - [D001: Übungen liegen in nummerierten Verzeichnissen](D001-uebungen-in-nummerierten-verzeichnissen.md)

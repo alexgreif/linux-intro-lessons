@@ -66,9 +66,13 @@ Diese Dateien werden von Lab-Skripten genutzt, aber nicht als Schüler-Arbeitsda
 - Zielzustände
 - Arbeitsnotizen
 - Backups
+- Kursplanung und offene Ideen
 
 `_instructor/` ist Teil des internen Authoring-Repos, aber nicht Teil einer späteren Schülerdistribution.
 Schüler-READMEs und Aufgaben dürfen nicht auf `_instructor/` verweisen.
+
+`_instructor/Kursplanung.md` hält den groben thematischen Verlauf des Kurses fest.
+`_instructor/Ideen_und_Todos.md` sammelt offene Einfälle und noch nicht umgesetzte Punkte.
 
 ## Lab-System
 
