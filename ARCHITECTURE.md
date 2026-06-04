@@ -29,6 +29,14 @@ NN_Thema/
 `lab_uebung_N.sh` und `.assets/` sind optional.
 `.assets/` wird nur angelegt, wenn technische Hilfsdateien für die Übung benötigt werden.
 
+## Namenskonventionen
+
+Schülernahe deutsche Materialdateien verwenden deutsche Groß- und Kleinschreibung, keine Leerzeichen und Worttrennung mit `_`.
+Technische Dateien verwenden lowercase `snake_case`.
+Interne Agenten- und Entscheidungsdokumentation verwendet lowercase `kebab-case`.
+
+Details und Beispiele stehen in [D012: Namenskonventionen für Dateien und Verzeichnisse](DECISIONS/D012-namenskonventionen.md).
+
 ## Schülerdateien
 
 Schüler arbeiten mit:

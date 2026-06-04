@@ -16,6 +16,7 @@ Es soll zukünftige Arbeit mit menschlichen und AI-Agenten erleichtern.
 - [D009: Dokumentation ist lebendig](D009-dokumentation-ist-lebendig.md)
 - [D010: Detaillierte Agenten-Guides liegen in `.agent-guides/`](D010-agenten-guides-in-.agent-guides.md)
 - [D011: Dieses Repository ist das interne Authoring-Repo](D011-internes-authoring-repo.md)
+- [D012: Namenskonventionen für Dateien und Verzeichnisse](D012-namenskonventionen.md)
 
 ## Neue Entscheidungen
 

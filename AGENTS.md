@@ -38,6 +38,7 @@ Ein Vollscan aller Übungen ist nicht nötig; orientiere dich an den Dateien, di
 - Die Root-`README.md` ist schülerorientiert und soll keine Agenten-, Instructor- oder interne Architektur-Dokumentation erklären.
 - Verlinke keine Dateien aus `_instructor/` in Schülerdokumenten.
 - Erkläre technische Hilfsdateien wie `.tools/` oder `.assets/` nicht unnötig in Aufgaben.
+- Beachte die Namenskonventionen aus `DECISIONS/D012-namenskonventionen.md`.
 - Verwende `Verzeichnis` als Standardbegriff; `Ordner` höchstens einmal erklärend.
 - Formatiere Befehle, Optionen, Pfade und Dateinamen als Inline-Code.
 - Halte `Konzepte_und_Befehle.md` kompakt; es ist Zusammenfassung und Nachschlagehilfe, kein Lehrbuch.
