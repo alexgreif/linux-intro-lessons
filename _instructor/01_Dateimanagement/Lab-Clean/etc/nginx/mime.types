@@ -1,0 +1,14 @@
+types {
+	text/html                 html htm;
+	text/css                  css;
+	application/javascript    js;
+	application/json          json;
+	application/xml           xml;
+	text/plain                txt;
+
+	image/svg+xml             svg svgz;
+	image/jpeg                jpg jpeg;
+	image/png                 png;
+	image/gif                 gif;
+	image/webp                webp;
+}

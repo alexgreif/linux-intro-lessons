@@ -1,0 +1,38 @@
+Deployment Notes
+
+Website root:
+/var/www/meme-machine
+
+Nginx site configuration:
+/etc/nginx/sites-available/meme-machine
+
+Enabled site symlink:
+/etc/nginx/sites-enabled/meme-machine
+
+After changing nginx configuration, test it with:
+nginx -t
+
+After a successful config test, reload nginx with:
+systemctl reload nginx
+
+Important files:
+index.html
+about.html
+contact.html
+robots.txt
+sitemap.xml
+.well-known/security.txt
+
+Asset folders:
+assets/css/
+assets/js/
+assets/jokes/
+assets/memes/
+
+When adding a new joke:
+1. Add a new .txt file to assets/jokes/
+2. Add the filename to assets/jokes/manifest.json
+
+When adding a new meme:
+1. Add the image file to assets/memes/
+2. Add the filename to assets/memes/manifest.json

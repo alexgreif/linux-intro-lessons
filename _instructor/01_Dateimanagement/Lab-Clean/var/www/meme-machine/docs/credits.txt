@@ -1,0 +1,27 @@
+Credits
+
+Jokes
+
+- All files in assets/jokes/
+  Source: JokeAPI
+  URL: https://v2.jokeapi.dev/
+  License: MIT License
+
+Memes and images
+
+- bugzilla-zarro-boogs.png
+  Source: Wikimedia Commons, File:Bugzilla Zarro Boogs Found.png
+  URL: https://commons.wikimedia.org/wiki/File:Bugzilla_Zarro_Boogs_Found.png
+  License: Mozilla Public License 2.0
+
+- backup.jpg
+  Source: Wikimedia Commons, File:IL FAIT UN "BACKUP" ! - HE MAKES A "BACKUP" ! (2803018812).jpg
+  URL: https://commons.wikimedia.org/wiki/File:IL_FAIT_UN_%22BACKUP%22_!_-_HE_MAKES_A_%22BACKUP%22_!_(2803018812).jpg
+  Author: Belgapixel's
+  License: Creative Commons Attribution-Share Alike 2.0
+
+- it-is-complicated.jpg
+  Source: Wikimedia Commons, File:IT IS VERY COMPLICATED... (2703681565).jpg
+  URL: https://commons.wikimedia.org/wiki/File:IT_IS_VERY_COMPLICATED..._(2703681565).jpg
+  Author: Belgapixel's
+  License: Creative Commons Attribution-Share Alike 2.0

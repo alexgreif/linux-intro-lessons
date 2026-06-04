@@ -1,0 +1,4 @@
+Contact: mailto:security@meme-machine.local
+Expires: 2026-12-31T23:59:59Z
+Preferred-Languages: en
+Canonical: http://meme-machine.local/.well-known/security.txt

@@ -1,0 +1,13 @@
+Meme Machine License
+
+This meme machine is provided for educational use.
+
+You may copy, modify, move, rename, and delete these files as part of classroom exercises, practice labs, and demonstrations.
+
+Sample files created for this lab may be reused for educational purposes.
+
+Third-party memes, images, jokes, or other media added to this website are not covered by this license. They remain subject to their original licenses, copyright terms, and usage permissions.
+
+See credits.txt for known third-party sources used by this meme machine.
+
+No warranty is provided. Use the files at your own risk.
