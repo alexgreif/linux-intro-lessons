@@ -17,6 +17,25 @@ Der Workflow soll helfen:
 - spätere Iterationen zu reduzieren
 - trotzdem beweglich zu bleiben, wenn beim Ausarbeiten bessere Lösungen sichtbar werden
 
+## Leitbild
+
+Eine gute Übung verbindet drei Ebenen:
+
+- eine kompakte fachliche Referenz in `Konzepte_und_Befehle.md`
+- praktische Aufgaben mit Beobachtung, Anwendung und Reflexion
+- realistische Kontexte durch echtes System, sichere Labs oder plausible Arbeitsverzeichnisse
+
+Schüler sollen nicht nur Befehle ausführen, sondern schrittweise verstehen, warum ein Konzept im echten Linux-Alltag nützlich ist.
+Dabei dürfen Aufgaben neue Themen zunächst praktisch anbahnen.
+Die systematische Einordnung kann anschließend in der Besprechung erfolgen.
+
+Die besten bisherigen Aufgaben haben eine erkennbare innere Logik:
+
+- erst Orientierung schaffen
+- dann gezielt handeln oder beobachten
+- anschließend vergleichen, recherchieren oder erklären
+- am Ende kontrollieren oder selbstständiger anwenden
+
 ## Ausgangspunkt
 
 Der Ausgangspunkt ist typischerweise:

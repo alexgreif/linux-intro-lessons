@@ -33,6 +33,13 @@ Kurze Einleitung.
 
 Wenn ein Thema mehrere klar getrennte Konzeptbereiche hat, können diese nummeriert werden, zum Beispiel `## Konzept 1: ...`.
 
+Die Gliederung soll die Denkstruktur der Übung widerspiegeln.
+Wenn eine Übung nur einen zusammenhängenden Themenbereich hat, reicht `## Konzepte` plus `## Befehle`.
+Wenn mehrere große Konzeptbereiche vorkommen, sind nummerierte Konzeptabschnitte sinnvoll, zum Beispiel `## Konzept 1: Die Anatomie eines Befehls`, `## Konzept 2: Manpages`.
+
+Die Abschnitte sollen nicht wie eine Vorlesungsmitschrift wirken.
+Sie sollen schnell auffindbare Referenzblöcke bilden.
+
 ## Inhaltliche Regeln
 
 - Nimm nur Konzepte auf, die für die Aufgaben relevant sind.
@@ -42,6 +49,8 @@ Wenn ein Thema mehrere klar getrennte Konzeptbereiche hat, können diese nummeri
 - Beispiele sollen sparsam und zielgerichtet sein.
 - Neue Befehle und Optionen gehören nur hinein, wenn sie in der Übung gebraucht werden oder bewusst als Recherchewerkzeug dienen.
 - Verrate keine Lösungen, die Schüler später selbst recherchieren oder erschließen sollen.
+- Benenne wichtige Ausnahmen oder Stolperstellen, wenn sie für die Aufgaben relevant sind.
+- Erkläre Bedienwissen nur so weit, wie Schüler es für die Übung brauchen.
 
 ## Stil
 
@@ -67,7 +76,23 @@ Gutes Muster:
 Tabellen sollen schnell scannbar bleiben.
 Beschreibungen sollen kurz sein und keine Aufgabenlösung ersetzen.
 
-## Gute Konzeptmuster
+Wenn es um Bedienung statt um Befehle geht, können ebenfalls Tabellen genutzt werden.
+Das passt besonders für Tasten, Modi oder häufige Optionen.
+
+Gutes Muster:
+
+```md
+| Taste | Funktion |
+| ----- | -------- |
+| `/Suchwort` | nach einem Suchwort suchen |
+| `q` | Anzeige schließen |
+```
+
+## Muster aus Übung 1 und 2
+
+Die bisherigen Konzeptdokumente nutzen einige Muster, die für neue Übungen hilfreich sind.
+
+### Kompakte Begriffsblöcke
 
 Gutes Muster:
 
@@ -77,9 +102,75 @@ Gutes Muster:
 
 Warum gut:
 
-- Begriff ist hervorgehoben.
-- Erklärung ist kurz.
-- Beispiel ist direkt nutzbar.
+- Der Begriff ist schnell auffindbar.
+- Die Erklärung ist kurz.
+- Das Beispiel reicht aus, um die Bedeutung wiederzuerkennen.
+
+### Beispiele Als Referenz, Nicht Als Übungsersatz
+
+Beispiele im Konzeptdokument sollen typische Formen zeigen, aber nicht jede spätere Aufgabe vormachen.
+
+Gutes Muster:
+
+````md
+Viele Terminalbefehle folgen grob dieser Struktur:
+
+```text
+Befehl [Optionen] [Argumente]
+```
+
+Beispiele:
+
+```bash
+ls -l /etc
+cp -r quelle/ ziel/
+find /var/log -name "*.log"
+```
+````
+
+Warum gut:
+
+- Die Beispiele zeigen das Muster.
+- Sie bleiben kurz.
+- Die eigentliche Anwendung passiert später in den Aufgaben.
+
+### Ausnahmen Bewusst Benennen
+
+Wenn ein Thema typische Konventionen erklärt, sollen relevante Ausnahmen erwähnt werden.
+Das verhindert falsche Verallgemeinerungen.
+
+Gutes Muster:
+
+```md
+Es gibt Befehle, die von den Konventionen abweichen.
+Deshalb ist es wichtig, bei Bedarf die manpage zu prüfen.
+```
+
+Warum gut:
+
+- Schüler bekommen eine Regel, aber keine Scheinsicherheit.
+- Die Aussage motiviert Dokumentationsnutzung.
+- Details werden nur so weit erklärt, wie sie für die Übung nützlich sind.
+
+### Bedienwissen Kompakt Bündeln
+
+Wenn ein Werkzeug zur Bearbeitung der Aufgaben bedient werden muss, darf das Konzeptdokument eine knappe Bedienübersicht enthalten.
+
+Gutes Muster:
+
+```md
+| Taste | Funktion |
+| ----- | -------- |
+| `↑` / `↓` | zeilenweise scrollen |
+| `/Suchwort` | nach einem Suchwort suchen |
+| `q` | manpage schließen |
+```
+
+Warum gut:
+
+- Schüler müssen nicht im Fließtext suchen.
+- Die Tabelle funktioniert als Nachschlagehilfe während der Aufgabe.
+- Nur die für die Übung nötigen Funktionen werden genannt.
 
 ## Vermeiden
 
