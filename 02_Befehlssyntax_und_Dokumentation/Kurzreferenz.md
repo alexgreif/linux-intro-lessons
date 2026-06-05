@@ -1,6 +1,6 @@
-# Konzepte und Befehle: Befehlssyntax und Dokumentation
+# Kurzreferenz: Befehlssyntax und Dokumentation
 
-Dieses Dokument fasst die wichtigsten Konzepte und Befehle zusammen, die du für diese Übung brauchst.
+Dieses Dokument fasst die wichtigsten Begriffe, Konzepte und Befehle zusammen, die du für diese Übung brauchst.
 
 ## Konzept 1: Die Anatomie eines Befehls
 
@@ -107,9 +107,9 @@ man man
 
 ### Navigation
 
-Viele manpages werden mit `less` angezeigt.
+manpages werden standardmäßig mit `less` angezeigt.
 `less` ist ein sogenannter Terminal-Pager, also ein Programm zur Anzeige von Textdateien im Terminal.
-Für manpages reichen zunächst diese Tasten:
+Für uns reichen zunächst diese Befehle:
 
 | Taste | Funktion |
 | ----- | -------- |

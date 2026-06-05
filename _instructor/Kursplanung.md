@@ -9,7 +9,7 @@ Es ist ein Planungsdokument für die Lehrkraft und darf sich ändern, wenn sich 
 | --- | --- | --- |
 | 1 | Dateimanagement | Dateisystem erkunden, Dateien und Verzeichnisse bearbeiten, Symlinks und Dotfiles einordnen |
 | 2 | Befehlssyntax und Dokumentation | Optionen, Flags, manpages, `du`, `stat`, `find` vertiefen |
-| 3 | Textverarbeitung | Textdateien lesen, ausgeben, umleiten und mit einfachen Editoren bearbeiten |
+| 3 | Textverarbeitung im Terminal | Textdateien lesen, ausgeben, umleiten und mit einfachen Editoren bearbeiten |
 | 4 | Shell-Umgebung und Konfiguration | Shell vs Terminal, Umgebungsvariablen, Konfigurationsdateien |
 
 ## Übergang Von Übung 3 Zu Übung 4
@@ -23,7 +23,7 @@ Vor oder zu Beginn von Übung 4 sollten folgende Konzepte eingeordnet werden:
 - warum Konfigurationsdateien häufig Textdateien sind
 - warum Umgebungsvariablen und Konfigurationsdateien zusammenhängen
 
-## Zuschnitt Übung 3
+## Zuschnitt Übung 3: Textverarbeitung im Terminal
 
 Übung 3 fokussiert Textdateien, Textausgabe, Umleitungen und einfache Texteditoren.
 Umgebungsvariablen und Konfigurationsdateien werden als systematische Hauptthemen in Übung 4 ausgelagert.

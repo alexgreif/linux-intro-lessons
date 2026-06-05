@@ -19,7 +19,7 @@ Eine Übung enthält typischerweise:
 ```text
 NN_Thema/
 ├── README.md
-├── Konzepte_und_Befehle.md
+├── Kurzreferenz.md
 ├── Aufgabe_1_....md
 ├── Aufgabe_2_....md
 ├── lab_uebung_N.sh
@@ -42,7 +42,7 @@ Details und Beispiele stehen in [D012: Namenskonventionen für Dateien und Verze
 Schüler arbeiten mit:
 
 - `README.md`
-- `Konzepte_und_Befehle.md`
+- `Kurzreferenz.md`
 - Aufgabenblättern
 - sichtbaren Lab-Skripten wie `lab_uebung_N.sh`
 

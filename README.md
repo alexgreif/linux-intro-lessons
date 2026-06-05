@@ -7,6 +7,7 @@ Die Übungen sind nach Themen sortiert und bauen schrittweise aufeinander auf.
 
 - `01_Dateimanagement/`: Dateien und Verzeichnisse im Terminal erkunden und bearbeiten
 - `02_Befehlssyntax_und_Dokumentation/`: Befehlssyntax, Optionen und Dokumentation im Terminal nutzen
+- `03_Textverarbeitung_im_Terminal/`: Textdateien anzeigen, Ausgaben umleiten und Terminaleditoren üben
 
 Die Verzeichnisse, deren Namen mit einer Zahl beginnen, sind die eigentlichen Übungen.
 Öffne zuerst die `README.md` im jeweiligen Übungsverzeichnis.

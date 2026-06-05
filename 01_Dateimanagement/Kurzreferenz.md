@@ -1,6 +1,6 @@
-# Konzepte und Befehle: Das Terminal als Dateimanager
+# Kurzreferenz: Das Terminal als Dateimanager
 
-Dieses Dokument fasst die wichtigsten Konzepte und Befehle zusammen, die du für die Aufgaben zum Dateimanagement brauchst.
+Dieses Dokument fasst die wichtigsten Begriffe, Konzepte und Befehle zusammen, die du für die Aufgaben zum Dateimanagement brauchst.
 
 ## Konzepte
 

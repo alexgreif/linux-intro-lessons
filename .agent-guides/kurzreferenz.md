@@ -1,16 +1,16 @@
-# Guide: `Konzepte_und_Befehle.md`
+# Guide: `Kurzreferenz.md`
 
-Dieser Guide beschreibt, wie Konzept- und Befehlsübersichten für Übungen gestaltet werden sollen.
-Orientiere dich an den bestehenden Dateien in `01_Dateimanagement/` und `02_Befehlssyntax_und_Dokumentation/`.
+Dieser Guide beschreibt, wie Kurzreferenzen für Übungen gestaltet werden sollen.
+Orientiere dich bei Bedarf an bestehenden Kurzreferenzen, besonders an aktuellen Übungen mit ähnlichem Thema oder ähnlicher Arbeitsform.
 
 ## Zweck
 
-`Konzepte_und_Befehle.md` ist die kompakte Verschriftlichung der wichtigsten Inhalte, die vor der Übung bereits in einer Praxispräsentation besprochen und demonstriert wurden.
+`Kurzreferenz.md` ist die kompakte Verschriftlichung der wichtigsten Inhalte, die vor der Übung bereits in einer Praxispräsentation besprochen und demonstriert wurden.
 Das Dokument dient als Nachschlagehilfe während der Aufgaben und später als Referenz, wenn Schüler Inhalte noch einmal auffrischen möchten.
 Es ist kein Ersatz für Unterricht, Live-Demonstration oder manpages.
 
 Wichtig: Dieser Hintergrund erklärt die knappe Form des Dokuments.
-In `Konzepte_und_Befehle.md` selbst soll aber nicht auf die Präsentation verwiesen werden.
+In `Kurzreferenz.md` selbst soll aber nicht auf die Präsentation verwiesen werden.
 Formulierungen wie “Wie du gerade in der Präsentation gelernt hast ...” sollen vermieden werden.
 
 ## Aufbau
@@ -18,7 +18,7 @@ Formulierungen wie “Wie du gerade in der Präsentation gelernt hast ...” sol
 Typische Struktur:
 
 ```md
-# Konzepte und Befehle: <Thema>
+# Kurzreferenz: <Thema>
 
 Kurze Einleitung.
 
@@ -37,6 +37,9 @@ Die Gliederung soll die Denkstruktur der Übung widerspiegeln.
 Wenn eine Übung nur einen zusammenhängenden Themenbereich hat, reicht `## Konzepte` plus `## Befehle`.
 Wenn mehrere große Konzeptbereiche vorkommen, sind nummerierte Konzeptabschnitte sinnvoll, zum Beispiel `## Konzept 1: Die Anatomie eines Befehls`, `## Konzept 2: Manpages`.
 
+Konzeptüberschriften sollen echte Denkbausteine innerhalb des Übungsthemas benennen.
+Sie sollen nicht einfach das Gesamtthema der Übung wiederholen.
+
 Die Abschnitte sollen nicht wie eine Vorlesungsmitschrift wirken.
 Sie sollen schnell auffindbare Referenzblöcke bilden.
 
@@ -51,6 +54,9 @@ Sie sollen schnell auffindbare Referenzblöcke bilden.
 - Verrate keine Lösungen, die Schüler später selbst recherchieren oder erschließen sollen.
 - Benenne wichtige Ausnahmen oder Stolperstellen, wenn sie für die Aufgaben relevant sind.
 - Erkläre Bedienwissen nur so weit, wie Schüler es für die Übung brauchen.
+- Vermeide Ausblicke auf spätere Übungen oder Themen, die nicht Teil der aktuellen Übung sind.
+- Rückbezüge auf frühere Übungen sind erlaubt, aber nur sparsam und bei starkem Zusammenhang. Nutze sie, wenn der Text sonst irritierend wirken könnte, weil Schüler das Thema schon einmal gesehen haben.
+- Erkläre keine banalen Alltagsbegriffe. Die Schüler sind in einer technischen Ausbildung; erkläre stattdessen die Linux- oder Terminal-spezifischen Unterschiede.
 
 ## Stil
 
@@ -60,6 +66,7 @@ Sie sollen schnell auffindbare Referenzblöcke bilden.
 - Formatiere Befehle, Optionen, Pfade, Dateinamen und manpage-Begriffe als Inline-Code.
 - Nutze kurze Absätze oder Bullet Points.
 - Vermeide lange, verschachtelte Erklärungen.
+- Wenn ein deutscher Begriff und ein englischer Fachbegriff wichtig sind, nutze den deutschen Begriff als Leitbegriff und nenne den englischen Fachbegriff beim ersten Auftreten, zum Beispiel `Umleitung` (*redirection*).
 
 ## Befehlsübersichten
 
@@ -88,9 +95,9 @@ Gutes Muster:
 | `q` | Anzeige schließen |
 ```
 
-## Muster aus Übung 1 und 2
+## Muster aus Bestehenden Übungen
 
-Die bisherigen Konzeptdokumente nutzen einige Muster, die für neue Übungen hilfreich sind.
+Die bisherigen Kurzreferenzen nutzen einige Muster, die für neue Übungen hilfreich sind.
 
 ### Kompakte Begriffsblöcke
 
@@ -108,7 +115,9 @@ Warum gut:
 
 ### Beispiele Als Referenz, Nicht Als Übungsersatz
 
-Beispiele im Konzeptdokument sollen typische Formen zeigen, aber nicht jede spätere Aufgabe vormachen.
+Beispiele in der Kurzreferenz sollen typische Formen zeigen, aber nicht jede spätere Aufgabe vormachen.
+Sie sollen nicht nur syntaktisch korrekt, sondern auch realistisch und motivierbar sein.
+Wenn ein realistisches Beispiel einen noch nicht behandelten Befehl nutzt, ist das erlaubt, solange dieser Befehl dadurch nicht Teil der Übung wird.
 
 Gutes Muster:
 
@@ -154,7 +163,7 @@ Warum gut:
 
 ### Bedienwissen Kompakt Bündeln
 
-Wenn ein Werkzeug zur Bearbeitung der Aufgaben bedient werden muss, darf das Konzeptdokument eine knappe Bedienübersicht enthalten.
+Wenn ein Werkzeug zur Bearbeitung der Aufgaben bedient werden muss, darf die Kurzreferenz eine knappe Bedienübersicht enthalten.
 
 Gutes Muster:
 
@@ -181,6 +190,8 @@ Vermeide:
 - große Beispielserien ohne direkten Aufgabenbezug
 - Inhalte, die in der Übung nicht verwendet werden
 - zu viele neue Begriffe auf einmal
+- Vorschauen auf spätere Übungen
+- künstliche Beispiele, die nur eine Syntax demonstrieren, aber keinen plausiblen Anwendungsfall zeigen
 
 Schlechtes Muster:
 
@@ -203,3 +214,5 @@ Prüfe vor Abschluss:
 - Sind Befehle, Optionen und Pfade korrekt als Code formatiert?
 - Werden keine späteren Rechercheaufgaben unnötig vorweggenommen?
 - Ist die Befehlsübersicht vollständig genug für die Übung, aber nicht überladen?
+- Benennen die Konzeptüberschriften echte Teilkonzepte statt das Übungsthema zu wiederholen?
+- Sind Beispiele realistisch genug, um als Referenz hilfreich zu sein?

@@ -25,14 +25,14 @@ Verwende folgende Regeln:
 
 | Bereich | Konvention | Beispiel |
 | --- | --- | --- |
-| Übungsverzeichnisse | `NN_Deutscher_Titel_Mit_Underscores`, keine Umlaute | `03_Textverarbeitung_Umgebungsvariablen_Konfigurationsdateien/` |
+| Übungsverzeichnisse | `NN_Deutscher_Titel_Mit_Underscores`, keine Umlaute | `03_Textverarbeitung_im_Terminal/` |
 | Schüler-Markdown | deutscher Titel mit `_`, Groß-/Kleinschreibung nach Deutsch, keine Umlaute | `Aufgabe_1_Textdateien_anzeigen.md` |
-| Konzeptdatei | fester deutscher Name | `Konzepte_und_Befehle.md` |
+| Kurzreferenz | fester deutscher Name | `Kurzreferenz.md` |
 | README | etablierter Standardname | `README.md` |
 | Lab-Skripte | lowercase `snake_case` | `lab_uebung_3.sh` |
 | Shell-Infrastruktur | lowercase `snake_case` | `lab_common.sh` |
 | Dot-Verzeichnisse | lowercase, kurz oder `kebab-case` | `.tools/`, `.assets/`, `.agent-guides/` |
-| Agent-Guides | lowercase `kebab-case.md` | `konzepte-und-befehle.md` |
+| Agent-Guides | lowercase `kebab-case.md` | `kurzreferenz.md` |
 | Decisions | `D###-kebab-case.md` | `D012-namenskonventionen.md` |
 | Instructor-Verzeichnis | bewusster Sonderfall | `_instructor/` |
 | Erzeugte Labs | sprechender Name mit Dashes | `Uebung-3-Lab` |

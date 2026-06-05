@@ -12,7 +12,7 @@ Stattdessen entsteht zuerst eine kompakte fachliche Grundlage, danach werden Auf
 Der Workflow soll helfen:
 
 - Umfang früh zu kontrollieren
-- `Konzepte_und_Befehle.md` als didaktischen Anker zu nutzen
+- `Kurzreferenz.md` als didaktischen Anker zu nutzen
 - Aufgaben und Labs passend aufeinander abzustimmen
 - spätere Iterationen zu reduzieren
 - trotzdem beweglich zu bleiben, wenn beim Ausarbeiten bessere Lösungen sichtbar werden
@@ -21,7 +21,7 @@ Der Workflow soll helfen:
 
 Eine gute Übung verbindet drei Ebenen:
 
-- eine kompakte fachliche Referenz in `Konzepte_und_Befehle.md`
+- eine kompakte fachliche Referenz in `Kurzreferenz.md`
 - praktische Aufgaben mit Beobachtung, Anwendung und Reflexion
 - realistische Kontexte durch echtes System, sichere Labs oder plausible Arbeitsverzeichnisse
 
@@ -53,6 +53,25 @@ Prüfe zusätzlich:
 - `_instructor/Kursplanung.md` für den geplanten thematischen Verlauf und Übergänge zwischen Übungen
 - `_instructor/Ideen_und_Todos.md` für offene Ideen, die zur neuen Übung passen könnten
 
+## Dokumentations-Checkpoints
+
+Vor dem Wechsel von einer nummerierten Workflow-Phase zur nächsten prüft der Agent kurz, ob die Dokumentation angepasst werden sollte.
+Das ist kein vollständiger Audit, sondern ein kurzer Rückblick auf die gerade abgeschlossene Phase.
+
+Prüfe:
+
+- Wurde eine wiederverwendbare Präferenz geklärt?
+- Hat eine bestehende Regel zu falschem, zu dogmatischem oder missverständlichem Verhalten geführt?
+- Musste etwas mehrfach diskutiert werden, obwohl es künftig klarer dokumentiert sein könnte?
+- Wurde eine Entscheidung getroffen, die spätere Übungen wahrscheinlich betrifft?
+- Hat fehlende oder unklare Dokumentation unnötige Suche, Abstimmung oder Nacharbeit verursacht?
+
+Wenn ja, aktualisiere die passende Dokumentation direkt oder halte bewusst fest, warum die Anpassung vertagt wird.
+Wenn nein, fahre ohne weitere Dokumentationsarbeit fort.
+
+Dokumentiere nicht jede Einzelkorrektur.
+Eine Anpassung lohnt sich vor allem, wenn sie künftige Erstentwürfe verbessert, wiederkehrende Rückfragen reduziert oder spätere Iterationen vermeidet.
+
 ## 1. Ideen Sichten
 
 Lies die vorhandene `Ideen.md` und identifiziere:
@@ -67,9 +86,9 @@ Lies die vorhandene `Ideen.md` und identifiziere:
 
 Ziel ist noch kein fertiger Plan, sondern ein gemeinsames Verständnis des Materials.
 
-## 2. `Konzepte_und_Befehle.md` Planen
+## 2. `Kurzreferenz.md` Planen
 
-Plane zuerst das Konzeptdokument.
+Plane zuerst die Kurzreferenz.
 Dabei klärst du:
 
 - Welche Inhalte wurden oder sollen vorher in einer Praxispräsentation besprochen werden?
@@ -79,17 +98,43 @@ Dabei klärst du:
 - Welche Inhalte sollen nur angerissen oder in eine spätere Übung verschoben werden?
 - Welche Informationen dürfen nicht zu ausführlich werden, weil sie später in Aufgaben recherchiert oder erschlossen werden sollen?
 
-Orientiere dich am Guide [.agent-guides/konzepte-und-befehle.md](konzepte-und-befehle.md).
+Orientiere dich am Guide [.agent-guides/kurzreferenz.md](kurzreferenz.md).
 
-## 3. Konzeptdokument Erstellen
+## 3. Kurzreferenz Erstellen
 
-Erstelle anschließend `Konzepte_und_Befehle.md` als kompakte Referenz.
+Erstelle anschließend `Kurzreferenz.md` als kompakte Referenz.
 Das Dokument muss an dieser Stelle noch nicht perfekt sein.
 Es soll aber klar genug sein, um als Grundlage für die Aufgabenplanung zu dienen.
 
-Wenn beim späteren Ausarbeiten der Aufgaben auffällt, dass Inhalte fehlen, zu ausführlich sind oder anders gegliedert werden sollten, wird das Konzeptdokument direkt angepasst.
+Prüfe beim Ausformulieren, ob die geplante Struktur noch trägt.
+Wenn eine Konzeptüberschrift zu breit wirkt, nur das Übungsthema wiederholt oder kein echtes Teilkonzept benennt, strukturiere direkt um.
 
-## 4. Aufgaben Und Labs Gemeinsam Planen
+Wenn beim späteren Ausarbeiten der Aufgaben auffällt, dass Inhalte fehlen, zu ausführlich sind oder anders gegliedert werden sollten, wird die Kurzreferenz direkt angepasst.
+
+## 4. Aufgaben-Skelett Entwerfen
+
+Leite Aufgaben nicht direkt aus den Kategorien von `Kurzreferenz.md` ab.
+Die Kurzreferenz liefert die fachliche Grundlage, aber Aufgaben entstehen aus sinnvollen Arbeitsphasen.
+
+Erstelle vor dem Ausformulieren ein kurzes Aufgaben-Skelett.
+Halte für jeden geplanten Abschnitt fest:
+
+- den praktischen Arbeitskontext oder das Szenario
+- die Lernhandlung, zum Beispiel erkunden, erzeugen, vergleichen, rekonstruieren, beobachten oder üben
+- die erwartete Erkenntnis, Transferleistung oder Entscheidung
+- die wichtigsten Werkzeuge, ohne schon jede Befehlszeile festzulegen
+- ob der Abschnitt eine andere Arbeitsform hat und deshalb ein eigenes Aufgabenblatt braucht
+
+Gute Abschnitte leisten mehr als “Konzept aus der Referenz einmal anwenden”.
+Sie nutzen Befehle als Werkzeuge für einen kleinen Zweck, erzeugen eine Beobachtung oder führen zu einer Entscheidung.
+
+Nach kurzen Grundübungen sollen Aufgaben möglichst mehrere Konzepte verbinden.
+Wenn ein Abschnitt nur wiederholt, was in der Kurzreferenz bereits steht, muss er umgebaut oder gestrichen werden.
+
+## 5. Aufgaben Und Labs Konkretisieren
+
+Das Aufgaben-Skelett beschreibt die grobe Lernstruktur.
+In diesem Schritt konkretisierst du daraus Aufgaben, Labs, Materialien und Aufteilung.
 
 Plane Aufgaben und Labs gemeinsam, nicht getrennt.
 
@@ -97,6 +142,7 @@ Kläre:
 
 - Welche Aufgaben passen zu den Konzepten?
 - Welche Lernkurve ergibt Sinn?
+- Wo braucht es kurze Grundübungen und wo integrierte Aufgaben, die mehrere Konzepte verbinden?
 - Wo sollen Schüler beobachten, vergleichen oder erklären?
 - Wo sollen sie recherchieren?
 - Wo kann das echte System lesend genutzt werden, um Kontext und Motivation zu schaffen?
@@ -112,7 +158,7 @@ Wenn sich später zeigt, dass ein Aufgabenblatt zu lang wird oder ein Thema klar
 Orientiere dich am Guide [.agent-guides/aufgabenblaetter.md](aufgabenblaetter.md).
 Für Lab-Skripte gilt zusätzlich [.tools/README.md](../.tools/README.md).
 
-## 5. Aufgaben Und Labs Iterativ Ausarbeiten
+## 6. Aufgaben Und Labs Iterativ Ausarbeiten
 
 Erstelle konkrete Drafts für:
 
@@ -126,7 +172,7 @@ Arbeite iterativ.
 Wenn während der Umsetzung auffällt, dass ein Konzept fehlt, ein Lab anders aufgebaut sein sollte oder eine Aufgabe besser geteilt wird, passe die Struktur sofort an.
 Es ist nicht nötig, bis zu einer späteren Review-Phase zu warten.
 
-## 6. Review Und Überarbeitung
+## 7. Review Und Überarbeitung
 
 Prüfe die Übung anschließend gezielt aus mehreren Perspektiven:
 
@@ -142,7 +188,53 @@ Prüfe die Übung anschließend gezielt aus mehreren Perspektiven:
 
 Bei Bedarf dürfen auch in dieser Phase noch strukturelle Änderungen vorgenommen werden.
 
-## 7. Abschluss
+## 8. Übungs-README Finalisieren
+
+Die Übungs-`README.md` ist der Einstiegspunkt in eine konkrete Übung.
+Sie soll knapp bleiben und Schüler auf die Bearbeitung vorbereiten, nicht die Aufgaben vorwegnehmen.
+
+Typische Struktur:
+
+```md
+# Übung: <Titel>
+
+Kurze Einleitung in ein bis zwei Absätzen.
+
+## Lernziele
+
+- ...
+
+## Hinweise
+
+Nur falls wirklich nötig.
+
+## Dateien
+
+Für diese Übung benötigst du die folgenden Dateien:
+
+- ...
+```
+
+`## Überblick` wird normalerweise nicht benötigt.
+Die Einleitung kann direkt unter dem Titel stehen.
+
+Lernziele beschreiben, was Schüler nach der Übung können, unterscheiden oder erklären können.
+Sie sollen keine bloßen Aktivitäten sein.
+Formuliere also eher “Textdateien mit `nano` und `vim` grundlegend bearbeiten” als “Textbearbeitung mit `nano` und `vim` üben”.
+Befehle, Optionen oder Syntaxzeichen müssen in Lernzielen nicht vollständig aufgezählt werden.
+Nenne sie, wenn der konkrete Befehl oder Begriff den Kompetenzbereich der Übung zentral benennt, zum Beispiel `find` und `-exec` in einer `find`-Vertiefung.
+Wenn der Name selbst nicht wichtig für die Orientierung ist, formuliere die Kompetenz allgemeiner, zum Beispiel “Ausgaben, Fehlermeldungen und Eingaben gezielt umleiten”.
+
+`## Hinweise` ist optional.
+Nutze diesen Abschnitt nur für wirklich übergreifende Hinweise zur gesamten Übung.
+Hinweise zu einzelnen Aufgaben, allgemeine Sicherheitsbelehrungen oder offensichtliche Arbeitsanweisungen gehören nicht in die Übungs-README.
+Bei der ersten Übung dürfen `Kurzreferenz.md` und das erste Lab-Skript noch explizit erwähnt werden, weil Schüler die Materialstruktur und Lab-Skripte dann erst kennenlernen.
+In späteren Übungen sollten allgemeine Lab-Skript-Hinweise nur noch stehen, wenn sie für genau diese Übung wirklich nötig sind.
+
+Die Dateiliste bildet den Abschluss der README.
+Sie listet nur Schülerdateien und sichtbare Lab-Skripte.
+
+## 9. Abschluss
 
 Zum Abschluss gehören:
 

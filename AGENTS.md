@@ -7,7 +7,7 @@ Sie soll schnell lesbar bleiben und auf Detaildokumente verweisen.
 
 Die Dokumentation ist lebendig:
 
-- Wenn Nutzerfeedback eine wiederverwendbare Präferenz klärt, prüfe, ob `AGENTS.md`, `DECISIONS/` oder ein Guide aktualisiert werden sollte.
+- Wenn Nutzerfeedback eine wiederverwendbare Präferenz klärt, prüfe, ob `AGENTS.md`, `ARCHITECTURE.md`, `DECISIONS/`, `.agent-guides/`, `_instructor/Kursplanung.md` oder `_instructor/Ideen_und_Todos.md` aktualisiert werden sollten.
 - Neue operative Arbeitsregeln gehören in `AGENTS.md`.
 - Grundsatzentscheidungen mit Begründung gehören in `DECISIONS/`.
 - Detaillierte didaktische Anleitungen gehören in `.agent-guides/`.
@@ -27,7 +27,7 @@ Die Schüler befinden sich in einer technischen Ausbildung und sind zu Beginn Li
 - `_instructor/Kursplanung.md`: geplanter thematischer Verlauf des Kurses
 - `_instructor/Ideen_und_Todos.md`: offene Ideen und noch nicht umgesetzte Punkte
 - `.agent-guides/uebungen-erstellen.md`: Workflow zum Erstellen neuer Übungen
-- `.agent-guides/konzepte-und-befehle.md`: detaillierte Anleitung für `Konzepte_und_Befehle.md`
+- `.agent-guides/kurzreferenz.md`: detaillierte Anleitung für `Kurzreferenz.md`
 - `.agent-guides/aufgabenblaetter.md`: detaillierte Anleitung für Aufgabenblätter
 - `.tools/README.md`: technische Anleitung für Lab-Skripte
 
@@ -44,7 +44,7 @@ Ein Vollscan aller Übungen ist nicht nötig; orientiere dich an den Dateien, di
 - Beachte die Namenskonventionen aus `DECISIONS/D012-namenskonventionen.md`.
 - Verwende `Verzeichnis` als Standardbegriff; `Ordner` höchstens einmal erklärend.
 - Formatiere Befehle, Optionen, Pfade und Dateinamen als Inline-Code.
-- Halte `Konzepte_und_Befehle.md` kompakt; es ist Zusammenfassung und Nachschlagehilfe, kein Lehrbuch.
+- Halte `Kurzreferenz.md` kompakt; sie ist Zusammenfassung und Nachschlagehilfe, kein Lehrbuch.
 - Formuliere Aufgaben beobachtbar und klar; erzwinge keine Frage, wenn ein Arbeitsauftrag besser ist.
 - Schreib- und Löschoperationen dürfen nur in Home- oder Lab-Verzeichnissen stattfinden.
 
@@ -68,4 +68,4 @@ Führe je nach Änderung passende Checks aus:
 - prüfen, dass Schüler-READMEs nur Schülerdateien listen
 - prüfen, dass Aufgabenpfade zu erzeugten Labs passen
 - bei größeren Umstrukturierungen Schülerperspektive und Instructor-Perspektive getrennt prüfen
-- nach bedeutenden Iterationen prüfen, ob `AGENTS.md`, `DECISIONS/` oder `.agent-guides/` aktualisiert werden sollte
+- nach bedeutenden Iterationen prüfen, ob `AGENTS.md`, `ARCHITECTURE.md`, `DECISIONS/`, `.agent-guides/`, `_instructor/Kursplanung.md` oder `_instructor/Ideen_und_Todos.md` aktualisiert werden sollten

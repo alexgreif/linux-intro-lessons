@@ -21,6 +21,13 @@ Nutze dieses Dokument, wenn eine Idee noch nicht konkret genug für eine Übungs
 - Mögliche Variablen: `PATH`, `HOME`, `USER`, `SHELL`, `EDITOR`, `VISUAL`, ggf. `PAGER`.
 - Mögliche Dateien: `.bashrc`, `.profile`, `/etc/environment`, ggf. `/etc/profile`.
 
+### Später: Prozesse und Jobs
+
+- `tail -f` in einer Konsole mit `&` im Hintergrund starten.
+- Mehrere `tail`-Prozesse auf dieselbe Datei starten und beobachten, dass neue Zeilen mehrfach ausgegeben werden.
+- `jobs` nutzen, um Hintergrundprozesse der aktuellen Shell-Sitzung anzuzeigen.
+- Prozess-IDs anzeigen lassen und die Prozesse anschließend mit `kill` beenden.
+
 ### Infrastruktur
 
 - Später klären, wie aus dem internen Authoring-Repo eine Schülerdistribution erzeugt wird.

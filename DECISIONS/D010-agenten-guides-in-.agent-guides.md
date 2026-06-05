@@ -14,4 +14,4 @@ Gleichzeitig sollen die durch Iteration entstandenen Präferenzen detailliert do
 ## Konsequenzen
 
 `AGENTS.md` verweist auf die Guides.
-Neue detaillierte Regeln zu Konzeptdokumenten oder Aufgabenblättern gehören in die passenden Dateien unter `.agent-guides/`.
+Neue detaillierte Regeln zu Kurzreferenzen oder Aufgabenblättern gehören in die passenden Dateien unter `.agent-guides/`.
