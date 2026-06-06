@@ -15,37 +15,59 @@ Formulierungen wie “Wie du gerade in der Präsentation gelernt hast ...” sol
 
 ## Aufbau
 
-Typische Struktur:
+Typischer Ausgangspunkt:
 
 ```md
 # Kurzreferenz: <Thema>
 
-Kurze Einleitung.
+Kurze thematische Einleitung.
 
-## Konzepte
+## Inhalt
 
-...
+- [Befehle](#befehle)
+- [Weitere Referenzbereiche](#...)
 
 ## Befehle
 
 ...
 ```
 
-Wenn ein Thema mehrere klar getrennte Konzeptbereiche hat, können diese nummeriert werden, zum Beispiel `## Konzept 1: ...`.
+Die Einleitung soll kurz in das Thema der Übung führen.
+Sie soll nicht nur den Zweck der Datei wiederholen.
+Der Zweck ist durch den Namen `Kurzreferenz.md` bereits klar.
+
+Ein Inhaltsverzeichnis ist optional.
+Es ist sinnvoll, wenn die Kurzreferenz mehrere klar getrennte Referenzbereiche enthält.
+Nutze interne Markdown-Links und ergänze bei Bedarf kurze Hinweise hinter dem Link, zum Beispiel:
+
+```md
+- [Textausgabe im Terminal](#textausgabe-im-terminal): Befehle und Pager (`less`)
+- [Text bearbeiten mit Texteditoren](#text-bearbeiten-mit-texteditoren): `nano` und `vim`
+```
 
 Die Gliederung soll die Denkstruktur der Übung widerspiegeln.
-Wenn eine Übung nur einen zusammenhängenden Themenbereich hat, reicht `## Konzepte` plus `## Befehle`.
-Wenn mehrere große Konzeptbereiche vorkommen, sind nummerierte Konzeptabschnitte sinnvoll, zum Beispiel `## Konzept 1: Die Anatomie eines Befehls`, `## Konzept 2: Manpages`.
+Sie soll aber vor allem als Nachschlagehilfe funktionieren.
+Referenztabellen, die Schüler wahrscheinlich oft nachschlagen, dürfen früh stehen, zum Beispiel `## Befehle`, `## Häufige Optionen` oder `## Umleitungen`.
+Die Reihenfolge muss nicht der Reihenfolge der Präsentation oder Aufgaben entsprechen.
 
-Konzeptüberschriften sollen echte Denkbausteine innerhalb des Übungsthemas benennen.
+Abschnittsüberschriften sollen echte Denk- oder Referenzbereiche innerhalb des Übungsthemas benennen.
 Sie sollen nicht einfach das Gesamtthema der Übung wiederholen.
+
+Gute Abschnittstitel sind konkret und schnell scannbar, zum Beispiel:
+
+- `## Orientierung im Dateisystem`
+- `## Sonderzeichen`
+- `## Häufige Optionen`
+- `## Umleitungen`
+- `## Standardströme`
+- `## Text bearbeiten mit Texteditoren`
 
 Die Abschnitte sollen nicht wie eine Vorlesungsmitschrift wirken.
 Sie sollen schnell auffindbare Referenzblöcke bilden.
 
 ## Inhaltliche Regeln
 
-- Nimm nur Konzepte auf, die für die Aufgaben relevant sind.
+- Nimm nur Begriffe, Konzepte, Befehle und Syntaxformen auf, die für die Aufgaben relevant sind.
 - Führe Begriffe knapp und präzise ein.
 - Fasse Fakten und Zusammenhänge so zusammen, dass Schüler sie beim Bearbeiten oder späteren Wiederholen schnell wiederfinden.
 - Erkläre genug, damit Schüler die Aufgaben bearbeiten können, aber schreibe kein vollständiges Lehrbuch.
@@ -70,7 +92,8 @@ Sie sollen schnell auffindbare Referenzblöcke bilden.
 
 ## Befehlsübersichten
 
-Befehle werden bevorzugt in Tabellen zusammengefasst.
+Befehle werden bevorzugt früh und in Tabellen zusammengefasst.
+Das gilt besonders, wenn Schüler die Kurzreferenz während der Aufgaben als schnellen Werkzeugüberblick nutzen.
 
 Gutes Muster:
 
@@ -84,7 +107,7 @@ Tabellen sollen schnell scannbar bleiben.
 Beschreibungen sollen kurz sein und keine Aufgabenlösung ersetzen.
 
 Wenn es um Bedienung statt um Befehle geht, können ebenfalls Tabellen genutzt werden.
-Das passt besonders für Tasten, Modi oder häufige Optionen.
+Das passt besonders für Tasten, Modi, häufige Optionen, Umleitungen oder andere kompakte Syntaxreferenzen.
 
 Gutes Muster:
 
@@ -98,6 +121,51 @@ Gutes Muster:
 ## Muster aus Bestehenden Übungen
 
 Die bisherigen Kurzreferenzen nutzen einige Muster, die für neue Übungen hilfreich sind.
+
+### Thematische Einleitung
+
+Die Einleitung soll das Thema kurz rahmen und seine Bedeutung verständlich machen.
+Sie soll nicht generisch erklären, dass die Datei Begriffe und Befehle zusammenfasst.
+
+Gutes Muster:
+
+```md
+Terminalbefehle bestehen aus mehreren Bausteinen: dem eigentlichen Befehl, Optionen, Parametern und Argumenten.
+Wenn du diese Struktur verstehst, kannst du Befehle gezielter einsetzen und die Dokumentation im Terminal besser nutzen.
+```
+
+Warum gut:
+
+- Die Einleitung passt genau zum Thema.
+- Sie erklärt kurz, warum das Thema nützlich ist.
+- Sie wiederholt nicht nur den Zweck der Datei.
+
+### Referenzbereiche Nach Nachschlagewert Ordnen
+
+Häufig genutzte Tabellen dürfen weit oben stehen, auch wenn die Begriffe dahinter erst später erklärt werden.
+Das ist sinnvoll, wenn Schüler beim Bearbeiten der Aufgaben schnell etwas nachschlagen sollen.
+
+Gutes Muster:
+
+```md
+## Befehle
+
+...
+
+## Umleitungen
+
+Eine **Umleitung** (*redirection*) verändert, wohin Ausgaben (`stdout`) oder Fehlermeldungen (`stderr`) eines Befehls gehen oder woher er seine Eingaben (`stdin`) bekommt. Siehe auch [Standardströme](#standardströme).
+
+| Umleitung | Bedeutung | Beispiel |
+| --------- | --------- | -------- |
+| `>` | Leitet `stdout` in eine Datei um. | `ls -l /etc > etc-liste.txt` |
+```
+
+Warum gut:
+
+- Die Tabelle steht dort, wo sie schnell gefunden wird.
+- Der Link verweist auf die genauere begriffliche Einordnung.
+- Die Kurzreferenz folgt der Nachschlagepraxis, nicht starr der didaktischen Reihenfolge.
 
 ### Kompakte Begriffsblöcke
 
@@ -209,10 +277,12 @@ Besser:
 
 Prüfe vor Abschluss:
 
-- Passt jedes Konzept zu mindestens einer Aufgabe?
+- Passt jeder Begriff, Befehl und Referenzbereich zu mindestens einer Aufgabe?
 - Sind die Erklärungen kompakter als die Aufgaben selbst?
 - Sind Befehle, Optionen und Pfade korrekt als Code formatiert?
 - Werden keine späteren Rechercheaufgaben unnötig vorweggenommen?
-- Ist die Befehlsübersicht vollständig genug für die Übung, aber nicht überladen?
-- Benennen die Konzeptüberschriften echte Teilkonzepte statt das Übungsthema zu wiederholen?
+- Sind Befehls- und Referenztabellen vollständig genug für die Übung, aber nicht überladen?
+- Benennen die Abschnittsüberschriften echte Denk- oder Referenzbereiche statt das Übungsthema zu wiederholen?
+- Ist die Reihenfolge für schnelles Nachschlagen sinnvoll?
+- Ist ein Inhaltsverzeichnis vorhanden, wenn die Kurzreferenz mehrere klar getrennte Referenzbereiche enthält?
 - Sind Beispiele realistisch genug, um als Referenz hilfreich zu sein?

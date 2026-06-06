@@ -1,8 +1,43 @@
 # Kurzreferenz: Befehlssyntax und Dokumentation
 
-Dieses Dokument fasst die wichtigsten Begriffe, Konzepte und Befehle zusammen, die du für diese Übung brauchst.
+Terminalbefehle bestehen aus mehreren Bausteinen: dem eigentlichen Befehl, Optionen, Parametern und Argumenten.
+Wenn du diese Struktur verstehst, kannst du Befehle gezielter einsetzen und die Dokumentation im Terminal besser nutzen.
 
-## Konzept 1: Die Anatomie eines Befehls
+## Inhalt
+
+- [Befehle](#befehle)
+- [Häufige Optionen](#häufige-optionen)
+- [Befehlssyntax: Die Anatomie eines Befehls](#befehlssyntax-die-anatomie-eines-befehls)
+- [manpages](#manpages)
+- [Weitere Hilfen im Terminal](#weitere-hilfen-im-terminal)
+
+## Befehle
+
+| Hilfe | Beschreibung | Beispiel |
+| ----- | ------------ | -------- |
+| `man` | Öffnet eine manpage. | `man ls` |
+| `help` | Zeigt Hilfe zu Shell-Builtins wie `cd` an. | `help cd` |
+| `whatis` | Zeigt die Kurzbeschreibung einer manpage. | `whatis du` |
+| `apropos` | Sucht in den Kurzbeschreibungen nach einem Begriff. | `apropos file` |
+| `type` | Zeigt, ob ein Name z. B. Alias, Builtin oder Programm ist. | `type cd` |
+
+## Häufige Optionen
+
+Folgende Optionen kommen bei vielen Befehlen vor:
+
+| Option | Häufige Bedeutung | Befehle |
+| ------ | ----------------- | --------- |
+| `-a` | all: alle Einträge anzeigen oder alle passenden Dinge berücksichtigen | `ls`, `du`, `cp` |
+| `-l` | long: ausführliche Ausgabe oder zeilenbezogene Ausgabe | `ls`, `wc`, `grep` |
+| `-h` | human readable oder help | `du`, `ls`, `df` |
+| `-r` | recursive oder reverse | `cp`, `rm`, `grep` (recursive), `ls` (reverse) |
+| `-R` | recursive | `cp`, `chmod`, `chown` |
+| `-i` | interactive: vor Aktionen nachfragen | `rm`, `cp`, `mv` |
+| `-v` | verbose: ausführlicher ausgeben, was passiert | `cp`, `mv`, `rm` |
+
+Die Tabelle ist eine Orientierung, keine feste Regel. Derselbe Optionsbuchstabe kann bei verschiedenen Befehlen unterschiedliche Bedeutungen haben.
+
+## Befehlssyntax: Die Anatomie eines Befehls
 
 ### Typische Befehlssyntax
 
@@ -71,23 +106,7 @@ Es gibt Befehle, die von den Konventionen abweichen. Zum Beispiel:
 Deshalb ist es immer wichtig, sich, zum Beispiel mit Hilfe der manpages, über die Syntax eines Befehls zu informieren, wenn man diesen benutzen möchte.
 So kann man Überraschungen und frustrierende Erlebnisse größtenteils vermeiden.
 
-### Häufige Optionen
-
-Folgende Optionen kommen bei vielen Befehlen vor:
-
-| Option | Häufige Bedeutung | Befehle |
-| ------ | ----------------- | --------- |
-| `-a` | all: alle Einträge anzeigen oder alle passenden Dinge berücksichtigen | `ls`, `du`, `cp` |
-| `-l` | long: ausführliche Ausgabe oder zeilenbezogene Ausgabe | `ls`, `wc`, `grep` |
-| `-h` | human readable oder help | `du`, `ls`, `df` |
-| `-r` | recursive oder reverse | `cp`, `rm`, `grep` (recursive), `ls` (reverse) |
-| `-R` | recursive | `cp`, `chmod`, `chown` |
-| `-i` | interactive: vor Aktionen nachfragen | `rm`, `cp`, `mv` |
-| `-v` | verbose: ausführlicher ausgeben, was passiert | `cp`, `mv`, `rm` |
-
-Die Tabelle ist eine Orientierung, keine feste Regel. Derselbe Optionsbuchstabe kann bei verschiedenen Befehlen unterschiedliche Bedeutungen haben.
-
-## Konzept 2: Manpages
+## Manpages
 
 Manpages sind die ausführliche Dokumentation im Terminal zu Befehlen, speziellen Dateien und weiteren Systemthemen. Zu Befehlen findest du dort meistens eine Kurzbeschreibung, die Syntax, Optionen und weitere Hinweise.
 
@@ -122,20 +141,9 @@ Für uns reichen zunächst diese Befehle:
 | `h` | Hilfe anzeigen |
 | `q` | manpage schließen |
 
-## Konzept 3: Weitere Hilfen im Terminal
+## Weitere Hilfen im Terminal
 
 - Shell-Builtins wie `cd` haben in der Regel keine manpage. Stattdessen kannst du ihre Dokumentation mit dem `help`-Befehl ausgeben lassen, zum Beispiel `help cd`.
 - Für viele Programme kannst du mit der `--help`-Option eine kurze Hilfe ausgeben lassen, zum Beispiel `ls --help`.
 - `whatis` gibt die Kurzbeschreibung einer manpage aus.
 - Mit `apropos` kannst du die Kurzbeschreibungen der manpages nach einem bestimmten Begriff durchsuchen.
-
-## Befehle
-
-### Dokumentation
-| Hilfe | Beschreibung | Beispiel |
-| ----- | ------------ | -------- |
-| `man` | Öffnet eine manpage. | `man ls` |
-| `help` | Zeigt Hilfe zu Shell-Builtins wie `cd` an. | `help cd` |
-| `whatis` | Zeigt die Kurzbeschreibung einer manpage. | `whatis du` |
-| `apropos` | Sucht in den Kurzbeschreibungen nach einem Begriff. | `apropos file` |
-| `type` | Zeigt, ob ein Name z. B. Alias, Builtin oder Programm ist. | `type cd` |

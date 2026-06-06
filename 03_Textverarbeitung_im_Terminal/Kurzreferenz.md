@@ -1,13 +1,63 @@
 # Kurzreferenz: Textverarbeitung im Terminal
 
-Dieses Dokument fasst die wichtigsten Begriffe, Konzepte und Befehle zusammen, die du für diese Übung brauchst.
-
-## Konzept 1: Textausgabe im Terminal
-
 Viele wichtige Dateien auf Linux-Systemen, zum Beispiel Konfigurationsdateien oder Logdateien, sind Textdateien.
 Viele Terminalbefehle erzeugen außerdem Textausgaben.
+Deshalb ist ein sicherer Umgang mit Textdateien im Terminal eine wichtige Grundlage für die Arbeit mit Linux-Systemen.
 
-Kurze Textdateien und Ausgaben können direkt im Terminal angezeigt werden.
+## Inhalt
+
+- [Befehle](#befehle)
+- [Umleitungen](#umleitungen)
+- [Standardströme](#standardströme)
+- [Textausgabe im Terminal](#textausgabe-im-terminal): Befehle und Pager (`less`)
+- [Text bearbeiten mit Texteditoren](#text-bearbeiten-mit-texteditoren): `nano` und `vim`
+
+## Befehle
+
+### Text anzeigen und ausgeben
+
+| Befehl | Ausgeschrieben | Beschreibung | Beispiel |
+| ------ | -------------- | ------------ | -------- |
+| `echo` | echo | Gibt Text aus. | `echo "Hallo"` |
+| `cat` | concatenate | Gibt den Inhalt von Dateien aus oder liest Text aus `stdin`. | `cat datei.txt` |
+| `less` | less | Zeigt Textdateien oder längere Ausgaben seitenweise an. | `less datei.txt` |
+| `head` | head | Gibt den Anfang einer Datei aus. | `head datei.txt` |
+| `tail` | tail | Gibt das Ende einer Datei aus. | `tail datei.txt` |
+
+### Text bearbeiten
+
+| Befehl | Beschreibung | Beispiel |
+| ------ | ------------ | -------- |
+| `nano` | Öffnet einen einfachen Terminaleditor. | `nano datei.txt` |
+| `vim` | Öffnet den Editor Vim. | `vim datei.txt` |
+
+## Umleitungen
+
+Eine **Umleitung** (*redirection*) verändert, wohin Ausgaben (`stdout`) oder Fehlermeldungen (`stderr`) eines Befehls gehen oder woher er seine Eingaben (`stdin`) bekommt. Siehe auch [Standardströme](#standardströme).
+Umleitungen brauchst du häufig beim Arbeiten mit Textausgaben.
+
+| Umleitung | Bedeutung | Beispiel |
+| --------- | --------- | -------- |
+| `>` | Leitet `stdout` in eine Datei um. Die Datei wird neu erstellt oder überschrieben. | `ls -l /etc > etc-liste.txt` |
+| `>>` | Leitet `stdout` in eine Datei um. Die Ausgabe wird an die Datei angehängt. | `echo "Noch eine Zeile" >> notiz.txt` |
+| `2>` | Leitet `stderr` in eine Datei um. | `find /etc -name "*.conf" 2> fehler.txt` |
+| `&>` | Leitet `stdout` **und** `stderr` in eine Datei um. | `find /etc -name "*.conf" &> suche.txt` |
+| `<` | Verwendet eine Datei als `stdin` für einen Befehl. | `sqlite3 datenbank.db < befehle.sql` |
+
+## Standardströme
+
+Standardströme sind ein zentrales Unix-/Linux-Konzept: Programme haben standardisierte Ein- und Ausgabekanäle, die im Terminal sichtbar und mit Umleitungen steuerbar werden.
+
+- **Standardeingabe** (`stdin`): Eingabe für ein Programm, standardmäßig über die Tastatur.
+- **Standardausgabe** (`stdout`): normale Ausgabe eines Programms, standardmäßig im Terminal.
+- **Fehlerausgabe** (`stderr`): Fehlermeldungen eines Programms, standardmäßig ebenfalls im Terminal.
+
+Wenn ein Programm Eingaben über `stdin` liest, kannst du die Eingabe im Terminal mit **Strg+D** beenden.
+Damit signalisierst du das Ende der Eingabe: `EOF` steht für *End of File*.
+
+## Textausgabe im Terminal
+
+Kurze Textdateien und Ausgaben können mit Befehlen wie `cat` direkt im Terminal angezeigt werden.
 Bei längeren Texten ist ein **Pager** wie `less` sinnvoll, weil du damit scrollen und suchen kannst, ohne die Datei zu verändern.
 
 ### Die wichtigsten Befehle in `less`
@@ -25,30 +75,7 @@ Du kennst `less` bereits als Standard-Pager der manpages. Hier sind trotzdem noc
 | `h` | Hilfe anzeigen |
 | `q` | `less` schließen |
 
-## Konzept 2: Standardströme
-
-Terminalprogramme arbeiten häufig mit drei Standardströmen:
-
-- **Standardeingabe** (`stdin`): Eingabe für ein Programm, standardmäßig über die Tastatur.
-- **Standardausgabe** (`stdout`): normale Ausgabe eines Programms, standardmäßig im Terminal.
-- **Fehlerausgabe** (`stderr`): Fehlermeldungen eines Programms, standardmäßig ebenfalls im Terminal.
-
-Wenn ein Programm Eingaben über `stdin` liest, kannst du die Eingabe im Terminal mit **Strg+D** beenden.
-Damit signalisierst du das Ende der Eingabe: `EOF` steht für *End of File*.
-
-## Konzept 3: Umleitungen
-
-Eine **Umleitung** (*redirection*) verändert, wohin Ausgaben oder Fehlermeldungen eines Befehls gehen oder woher er seine Eingaben bekommt.
-
-| Umleitung | Bedeutung | Beispiel |
-| --------- | --------- | -------- |
-| `>` | Leitet `stdout` in eine Datei um. Die Datei wird neu erstellt oder überschrieben. | `ls -l /etc > etc-liste.txt` |
-| `>>` | Leitet `stdout` in eine Datei um. Die Ausgabe wird an die Datei angehängt. | `echo "Noch eine Zeile" >> notiz.txt` |
-| `2>` | Leitet `stderr` in eine Datei um. | `find /etc -name "*.conf" 2> fehler.txt` |
-| `&>` | Leitet `stdout` **und** `stderr` in eine Datei um. | `find /etc -name "*.conf" &> suche.txt` |
-| `<` | Verwendet eine Datei als `stdin` für einen Befehl. | `sqlite3 datenbank.db < befehle.sql` |
-
-## Konzept 4: Text bearbeiten mit Texteditoren
+## Text bearbeiten mit Texteditoren
 
 Wenn Text nicht nur angezeigt, sondern verändert werden soll, brauchst du einen Texteditor.
 Bekannte Terminaleditoren sind:
@@ -89,22 +116,3 @@ Für den Anfang reichen diese Befehle:
 | `:q` | `vim` beenden |
 | `:wq` | speichern und beenden |
 | `:q!` | beenden, ohne Änderungen zu speichern |
-
-## Befehle
-
-### Text anzeigen und ausgeben
-
-| Befehl | Ausgeschrieben | Beschreibung | Beispiel |
-| ------ | -------------- | ------------ | -------- |
-| `echo` | echo | Gibt Text aus. | `echo "Hallo"` |
-| `cat` | concatenate | Gibt den Inhalt von Dateien aus oder liest Text aus `stdin`. | `cat datei.txt` |
-| `less` | less | Zeigt Textdateien oder längere Ausgaben seitenweise an. | `less datei.txt` |
-| `head` | head | Gibt den Anfang einer Datei aus. | `head datei.txt` |
-| `tail` | tail | Gibt das Ende einer Datei aus. | `tail datei.txt` |
-
-### Text bearbeiten
-
-| Befehl | Beschreibung | Beispiel |
-| ------ | ------------ | -------- |
-| `nano` | Öffnet einen einfachen Terminaleditor. | `nano datei.txt` |
-| `vim` | Öffnet den Editor Vim. | `vim datei.txt` |
