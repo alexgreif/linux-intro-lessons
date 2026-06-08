@@ -12,10 +12,10 @@ jobs:
 
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v4
+        uses: actions/checkout@v5
 
       - name: Create student package
-        run: _instructor/tools/create_student_package.sh
+        run: bash _instructor/tools/create_student_package.sh
 
       - name: Publish GitHub release
         env:
