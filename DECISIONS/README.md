@@ -20,6 +20,7 @@ Veränderliche Kursplanung und offene Ideen gehören nach `_instructor/Kursplanu
 - [D010: Detaillierte Agenten-Guides liegen in `.agent-guides/`](D010-agenten-guides-in-.agent-guides.md)
 - [D011: Dieses Repository ist das interne Authoring-Repo](D011-internes-authoring-repo.md)
 - [D012: Namenskonventionen für Dateien und Verzeichnisse](D012-namenskonventionen.md)
+- [D013: Schülerdistribution als ZIP-Release](D013-schuelerdistribution-als-zip-release.md)
 
 ## Neue Entscheidungen
 

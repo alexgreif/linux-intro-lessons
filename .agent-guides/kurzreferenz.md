@@ -47,7 +47,7 @@ Nutze interne Markdown-Links und ergänze bei Bedarf kurze Hinweise hinter dem L
 
 Die Gliederung soll die Denkstruktur der Übung widerspiegeln.
 Sie soll aber vor allem als Nachschlagehilfe funktionieren.
-Referenztabellen, die Schüler wahrscheinlich oft nachschlagen, dürfen früh stehen, zum Beispiel `## Befehle`, `## Häufige Optionen` oder `## Umleitungen`.
+Referenztabellen, die Schüler wahrscheinlich oft nachschlagen, dürfen früh stehen, zum Beispiel `## Befehle`, `## Häufige Optionen`, `## Umleitungen`, `## Wichtige Variablen` oder `## Wichtige Konfigurationsdateien`.
 Die Reihenfolge muss nicht der Reihenfolge der Präsentation oder Aufgaben entsprechen.
 
 Abschnittsüberschriften sollen echte Denk- oder Referenzbereiche innerhalb des Übungsthemas benennen.
@@ -107,7 +107,7 @@ Tabellen sollen schnell scannbar bleiben.
 Beschreibungen sollen kurz sein und keine Aufgabenlösung ersetzen.
 
 Wenn es um Bedienung statt um Befehle geht, können ebenfalls Tabellen genutzt werden.
-Das passt besonders für Tasten, Modi, häufige Optionen, Umleitungen oder andere kompakte Syntaxreferenzen.
+Das passt besonders für Tasten, Modi, häufige Optionen, Umleitungen, wichtige Variablen, wichtige Dateien oder andere kompakte Syntaxreferenzen.
 
 Gutes Muster:
 

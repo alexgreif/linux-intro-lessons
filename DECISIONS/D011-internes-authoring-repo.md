@@ -17,3 +17,4 @@ Für diese Arbeit ist es hilfreich, Aufgaben, technische Hilfsmittel, didaktisch
 Die Root-`README.md` bleibt als Schüler-Einstieg formuliert, obwohl sie im internen Repo liegt.
 Eine spätere Schülerdistribution wird aus diesem Repo abgeleitet und enthält nur Schülerdateien sowie technisch notwendige Hilfsdateien.
 Interne Dateien wie `AGENTS.md`, `.agent-guides/`, `ARCHITECTURE.md`, `DECISIONS/` und `_instructor/` gehören nicht in die Schülerdistribution.
+Die konkrete Bereitstellung ist in [D013: Schülerdistribution als ZIP-Release](D013-schuelerdistribution-als-zip-release.md) festgelegt.

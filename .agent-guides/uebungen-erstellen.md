@@ -200,23 +200,36 @@ Typische Struktur:
 
 Kurze Einleitung in ein bis zwei Absätzen.
 
-## Lernziele
+## Dateien
+
+Für diese Übung benötigst du die folgenden Dateien:
 
 - ...
+
+## Vorgehen
+
+Kurze Bearbeitungsreihenfolge.
 
 ## Hinweise
 
 Nur falls wirklich nötig.
 
-## Dateien
-
-Für diese Übung benötigst du die folgenden Dateien:
+## Lernziele
 
 - ...
 ```
 
 `## Überblick` wird normalerweise nicht benötigt.
 Die Einleitung kann direkt unter dem Titel stehen.
+
+Die Dateiliste steht früh in der README.
+Sie gibt Schülern einen schnellen Überblick darüber, welche Materialien zur Übung gehören.
+Sie listet nur Schülerdateien und sichtbare Lab-Skripte.
+
+`## Vorgehen` steht direkt nach der Dateiliste und beschreibt die Bearbeitungsreihenfolge.
+Die nummerierten Punkte müssen echte zeitliche Schritte sein.
+Allgemeine Hinweise wie “Nutze die Kurzreferenz als Nachschlagehilfe” stehen nicht als eigener Sequenzschritt.
+Solche Hinweise gehören in die Root-README oder bei Bedarf in `## Hinweise`.
 
 Lernziele beschreiben, was Schüler nach der Übung können, unterscheiden oder erklären können.
 Sie sollen keine bloßen Aktivitäten sein.
@@ -231,8 +244,12 @@ Hinweise zu einzelnen Aufgaben, allgemeine Sicherheitsbelehrungen oder offensich
 Bei der ersten Übung dürfen `Kurzreferenz.md` und das erste Lab-Skript noch explizit erwähnt werden, weil Schüler die Materialstruktur und Lab-Skripte dann erst kennenlernen.
 In späteren Übungen sollten allgemeine Lab-Skript-Hinweise nur noch stehen, wenn sie für genau diese Übung wirklich nötig sind.
 
-Die Dateiliste bildet den Abschluss der README.
-Sie listet nur Schülerdateien und sichtbare Lab-Skripte.
+Normalerweise wird zuerst die `Kurzreferenz.md` gelesen.
+Danach werden die Aufgabenblätter entweder in der Reihenfolge der Dateiliste bearbeitet oder einzeln benannt, wenn zwischen Aufgaben noch ein Lab-Skript, Download oder anderer Zwischenschritt nötig ist.
+Lab-Skripte stehen im Vorgehen dort, wo sie tatsächlich ausgeführt werden sollen.
+
+Die Bearbeitungsreihenfolge wird in der README erklärt, nicht durch zusätzliche Nummerierung von Hilfsdateien.
+Dateien wie `Kurzreferenz.md`, `Hyper-V.md` oder `Ubuntu_Server.md` werden nicht nur deshalb umbenannt, um eine Reihenfolge im Dateinamen abzubilden.
 
 ## 9. Abschluss
 

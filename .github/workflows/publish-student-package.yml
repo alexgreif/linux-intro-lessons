@@ -1,0 +1,28 @@
+name: Publish student package
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Create student package
+        run: _instructor/tools/create_student_package.sh
+
+      - name: Publish GitHub release
+        env:
+          GH_TOKEN: ${{ github.token }}
+          TAG_NAME: student-${{ github.run_number }}
+        run: |
+          gh release create "$TAG_NAME" dist/linux-server-uebungen.zip \
+            --title "Schuelerunterlagen $TAG_NAME" \
+            --notes "Automatisch erzeugtes Schuelerpaket aus Commit ${GITHUB_SHA}." \
+            --latest

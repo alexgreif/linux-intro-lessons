@@ -24,6 +24,7 @@ Die Schüler befinden sich in einer technischen Ausbildung und sind zu Beginn Li
 
 - `ARCHITECTURE.md`: Repo-Struktur und Zuständigkeit der Dateitypen
 - `DECISIONS/README.md`: begründete Entscheidungen und Konsequenzen
+- `_instructor/README.md`: Einstieg in Instructor-Material und Schülerdistribution
 - `_instructor/Kursplanung.md`: geplanter thematischer Verlauf des Kurses
 - `_instructor/Ideen_und_Todos.md`: offene Ideen und noch nicht umgesetzte Punkte
 - `.agent-guides/uebungen-erstellen.md`: Workflow zum Erstellen neuer Übungen

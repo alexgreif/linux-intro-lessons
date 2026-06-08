@@ -133,6 +133,15 @@ Aufgaben dürfen deshalb gezielt mit Konzepten arbeiten, die noch nicht vollstä
 Dann muss der Arbeitsauftrag aber so gestaltet sein, dass Schüler die Beobachtung sicher und sinnvoll durchführen können.
 Die Aufgabe soll nicht voraussetzen, dass sie das neue Konzept bereits vollständig verstanden haben.
 
+## Ausnahme: Übung 0
+
+`00_Ubuntu_VM_einrichten` ist eine bewusste Ausnahme zu den normalen Terminalübungen.
+Diese Übung dient dazu, zuerst eine arbeitsfähige Ubuntu-Server-VM herzustellen.
+
+Sie darf deshalb statt einer `Kurzreferenz.md` thematische Setup-Dokumente wie `Hyper-V.md` und `Ubuntu_Server.md` verwenden.
+Das Aufgabenblatt bleibt kurz und verweist auf diese Dokumente sowie auf ein separates Dokumentationstemplate.
+So bleibt die Einrichtung möglichst reibungslos, ohne die wichtigsten VM-Daten, Kontrollpunkte und Entscheidungen zu verlieren.
+
 ## Echtes System Und Realistische Labs
 
 Wenn es sinnvoll und sicher ist, sollen Schüler am echten Linux-Dateisystem arbeiten.

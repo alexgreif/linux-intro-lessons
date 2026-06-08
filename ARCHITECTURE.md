@@ -71,8 +71,16 @@ Diese Dateien werden von Lab-Skripten genutzt, aber nicht als Schüler-Arbeitsda
 `_instructor/` ist Teil des internen Authoring-Repos, aber nicht Teil einer späteren Schülerdistribution.
 Schüler-READMEs und Aufgaben dürfen nicht auf `_instructor/` verweisen.
 
+`_instructor/README.md` ist der Einstiegspunkt für interne Lehrkraft- und Veröffentlichungsarbeit.
+Sie erklärt die wichtigsten Instructor-Dateien und den Ablauf zur Schülerdistribution.
 `_instructor/Kursplanung.md` hält den groben thematischen Verlauf des Kurses fest.
 `_instructor/Ideen_und_Todos.md` sammelt offene Einfälle und noch nicht umgesetzte Punkte.
+
+## Schülerdistribution
+
+Die Schülerdistribution wird als ZIP-Paket aus dem internen Authoring-Repo erzeugt.
+Sie enthält nur die Root-`README.md`, nummerierte Übungsverzeichnisse und `.tools/`.
+Details stehen in [D013: Schülerdistribution als ZIP-Release](DECISIONS/D013-schuelerdistribution-als-zip-release.md).
 
 ## Lab-System
 
