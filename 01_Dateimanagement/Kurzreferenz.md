@@ -73,3 +73,7 @@ Das ist ein erster wichtiger Schritt zum sicheren Umgang mit dem Terminal.
 - Mit der **Tab-Taste** kann die Shell Datei- und Verzeichnisnamen automatisch vervollständigen. Wenn die Eingabe eindeutig ist, wird sie ergänzt; wenn mehrere Möglichkeiten passen, zeigt Bash diese nach zweifachem Drücken der Tab-Taste an.
 
 - Mit **Strg+C** kann ein laufendes Programm im Terminal abgebrochen werden. Die Shell sendet dabei ein Abbruchsignal an das Programm.
+
+- Mit &#8593; und &#8595; könnt ihr durch eure Befehlshistorie gehen:
+    - &#8593; geht in der Historie *zurück*
+    - &#8595; geht in der Historie *vorwärts*. 

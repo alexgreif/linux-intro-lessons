@@ -134,16 +134,8 @@ PAGER
 - Wirkung testen und Änderung am Ende wieder entfernen oder bewusst behalten.
 - Erwartete Erkenntnis: Konfigurationsdateien machen eigene Shell-Anpassungen dauerhaft.
 
-### 5. Konfigurationsdateien und manpages einordnen
+### Gestrichen: Konfigurationsdateien und manpages einordnen
 
-- Lesende Such- und Einordnungsaufgabe.
-- Leitfragen statt bloßem Datei-Rundgang:
-  - Welche Dateien gehören deinem Benutzer, welche sind systemweit?
-  - Welche Datei sieht wie ein Shell-Skript aus?
-  - Welche Datei enthält einfache `NAME=Wert`-Einträge?
-  - Wo findest du deine Login-Shell?
-  - Welche Datei würdest du für einen Alias nutzen?
-  - Welche Datei würdest du für eine systemweite Variable eher nicht selbst bearbeiten?
-- Manpages zu Dateien nutzen, z. B. `passwd(5)` statt `passwd(1)`.
-- Hinweisidee: `man man` nutzen, falls die passende Section unklar ist.
-- Erwartete Erkenntnis: manpages dokumentieren nicht nur Befehle, sondern auch Dateien und Systemthemen.
+Eine lesende Einordnungsaufgabe zu `~/.bashrc`, `~/.profile`, `/etc/profile`, `/etc/environment`, `/etc/passwd` und Datei-manpages wurde verworfen.
+Die Übung endet dadurch fokussierter nach Aliases und `~/.bashrc`.
+Die Dateiübersicht bleibt in der Kurzreferenz als Nachschlagewissen erhalten; eine aktivere Aufgabe zu manpage-Sections oder Konfigurationsdateien kann später wieder aufgegriffen werden.

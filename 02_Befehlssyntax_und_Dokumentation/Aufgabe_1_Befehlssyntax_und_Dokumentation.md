@@ -33,15 +33,19 @@ In diesem Abschnitt untersuchst du einen bekannten Befehl genauer. Du vergleichs
 
 ## 3. Symlinks mit `pwd`
 
-In Übung 1 hast du gesehen, dass `/bin` auf deinem Ubuntu-System ein Symlink ist. Jetzt nutzt du die manpages, um zu untersuchen, wie der `pwd`-Befehl Symlinks behandelt.
+In Übung 1 hast du gesehen, dass `/bin` auf deinem Ubuntu-System ein Symlink ist. Jetzt nutzt du die Dokumentation im Terminal, um zu untersuchen, wie der `pwd`-Befehl Symlinks behandelt.
 
 **3.1** Begib dich in das Verzeichnis `/bin`. Welchen Pfad gibt `pwd` aus?
 
-**3.2** Öffne die manpage zu `pwd` und finde heraus, wie du mit `pwd` den logischen und den physischen Pfad ausgeben kannst.
+**3.2** Ist `pwd` Shell-Builtin oder Programm?
 
-**3.3** Gib in `/bin` beide Pfade aus. Was ist der Unterschied zwischen den beiden Ausgaben?
+**3.3** Welche Optionen hat `pwd`? Nutze deine Antwort aus **3.2**, um die korrekte Hilfe zu `pwd` auszugeben.
 
-**3.4** Erkläre kurz, warum dieser Unterschied zu dem passt, was du in Übung 1 über `/bin` herausgefunden hast.
+**3.4** Test diese Optionen in `/bin`. Inwiefern unterscheiden sich die Ausgaben?
+
+**3.5** Erkläre kurz, warum dieser Unterschied zu dem passt, was du in Übung 1 (Aufgabenblatt 1, Aufgabenteil 6) über `/bin` herausgefunden hast.
+
+**3.6** Tatsächlich gibt es neben dem Shell-Builtin `pwd` auch ein Programm `pwd` (mehr dazu in Übung 4). Find auf der manpage von `pwd` heraus, wofür `-P` und `-L` stehen.
 
 ## 4. `cp` und `rm`
 
