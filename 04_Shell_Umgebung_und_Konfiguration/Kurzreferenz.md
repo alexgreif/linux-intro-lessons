@@ -78,7 +78,7 @@ Mit `$NAME` liest du den Wert aus.
 - **Alias**: Eine Abkürzung, die die Shell vor dem Ausführen eines Befehls ersetzt, zum Beispiel `ll` für `ls -l`.
 
 Nicht jeder Name, den du im Terminal eingibst, ist also ein eigenständiges Programm.
-Den Unterschied zwischen Shell-Builtins und externen Programmen hast du schon in Übung 2 kennengelernt:
+Einen Unterschied zwischen Shell-Builtins und externen Programmen hast du schon in Übung 2 kennengelernt:
 Externe Programme sind in den manpages dokumentiert. Die Dokumentation zu Shell-Builtins öffnest du mit `help`.
 Auch `type` hast du dort schon genutzt, um zu prüfen, wie die Shell einen Namen einordnet.
 
@@ -147,7 +147,7 @@ Manche Dateien enthalten einfache `NAME=Wert`-Einträge, andere enthalten Shell-
 
 - Da `~/.bashrc` ein Bash-Skript ist, kannst du dort zum Beispiel `export PAGER=less` als eigene Zeile einfügen. Dadurch wird `PAGER` zu Beginn jeder interaktiven Bash-Sitzung gesetzt und `less` somit persistent als Default-Pager festgelegt.
 - Die **Default-Shell** eines Benutzers ist ebenfalls eine Konfiguration.
-Sie ist in `/etc/passwd` eingetragen.
+Sie ist in `/etc/passwd` eingetragen und kann mit dem Befehl `chsh` verändert werden.
 
 Wenn du eine Konfigurationsdatei, zum Beispiel `~/.bashrc`, geändert hast, musst du nicht zwingend ein neues Terminal öffnen.
 Du kannst die Datei einfach neu einlesen:

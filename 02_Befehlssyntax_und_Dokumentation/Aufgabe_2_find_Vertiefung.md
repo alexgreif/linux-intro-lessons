@@ -57,13 +57,7 @@ find /etc -type f -name "*.conf" -exec file {} \;
 **2.3** Lasse dir mit `du` die Speicherbelegung aller `.conf`-Dateien in `/etc` und seinen Unterverzeichnissen ausgeben. Nutze dazu die `-exec`-Option von `find`.
 Nutze die `du`-Optionen, die du in Aufgabe 4 kennengelernt hast, um die Ausgabe nach deinen Wünschen zu formatieren.
 
-Für die nächsten Aufgaben erzeugst du zuerst das Lab-Verzeichnis:
-
-```bash
-bash lab_uebung_2.sh
-```
-
-Standardmäßig wird das Lab unter `~/labs/Uebung-2-Lab` erstellt. Arbeite bei verändernden Befehlen nur in diesem Verzeichnis. Die Zielverzeichnisse sind bereits vorhanden.
+Für die nächsten Aufgaben arbeitest du im Lab-Verzeichnis.
 
 **2.4** Kopiere mit nur einem Befehl alle `.txt`-Dateien aus `~/labs/Uebung-2-Lab/Find-Exec-Lab/eingang` und seinen Unterverzeichnissen nach `~/labs/Uebung-2-Lab/Find-Exec-Lab/ziel/texte`. Kontrolliere anschließend den Inhalt von `~/labs/Uebung-2-Lab/Find-Exec-Lab/ziel/texte`.
 

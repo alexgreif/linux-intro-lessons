@@ -8,6 +8,7 @@ Die Aufgaben werden schrittweise selbstständiger: Zuerst erkundest du das echte
 Für diese Übung benötigst du die folgenden Dateien:
 
 - [Kurzreferenz](Kurzreferenz.md)
+- [Wichtige Systemverzeichnisse](Wichtige_Systemverzeichnisse.md)
 - [Aufgabe 1: Dateisystem erkunden](Aufgabe_1_Dateisystem_erkunden.md)
 - [Aufgabe 2: Dateien und Verzeichnisse bearbeiten](Aufgabe_2_Dateien_und_Verzeichnisse.md)
 - [Aufgabe 3: Dateisystem wiederherstellen](Aufgabe_3_Dateisystem_wiederherstellen.md)
@@ -26,7 +27,6 @@ Für diese Übung benötigst du die folgenden Dateien:
 
 - Prüfe regelmäßig, in welchem Verzeichnis du dich befindest.
 - Kontrolliere Ausgaben, bevor du Dateien verschiebst oder löschst.
-- Für Aufgabe 3 benötigst du das Lab-Skript `lab_uebung_1.sh`. Allgemeine Hinweise zu Lab-Skripten findest du in der [README im Hauptverzeichnis](../README.md).
 - Viele Aufgaben lassen sich auf unterschiedliche Weise lösen.
 
 ## Lernziele

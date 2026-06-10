@@ -30,8 +30,8 @@ Diese Dateien werden von den Lab-Skripten benötigt, müssen aber nicht direkt b
 
 ## Kursunterlagen in der VM
 
-Spätestens vor dem ersten Lab-Skript müssen die Kursunterlagen auch in deiner Ubuntu-VM liegen.
-Lade sie dazu in der VM herunter und entpacke sie:
+Für manche Aufgaben brauchst du die Kursunterlagen direkt in deiner Ubuntu-VM, zum Beispiel um Lab-Skripte auszuführen.
+Lade die Kursunterlagen dazu in der VM herunter und entpacke sie. Führe dazu die folgenden Befehle aus:
 
 ```bash
 mkdir -p ~/kurs
@@ -47,36 +47,45 @@ Danach kannst du in das passende Übungsverzeichnis wechseln und dort weiterarbe
 
 Einige Aufgaben benötigen vorbereitete Lab-Verzeichnisse.
 Diese Verzeichnisse werden durch Skripte erzeugt.
-Das passende Skript liegt jeweils im Übungsverzeichnis und beginnt mit `lab_`.
+Um ein Verzeichnis anzulegen, musst du das jeweilige Skript ausführen.
+Das passende Skript liegt jeweils im Übungsverzeichnis und heißt `lab_uebung_N.sh`, wobei N für die Nummer der Übung steht.
+Das Skript für das Lab aus Übung 1 liegt also zum Beispiel in `01_Dateimanagement` und heißt `lab_uebung_1.sh`.
 
-Um ein Lab-Skript zu starten, wechselst du zuerst in das passende Übungsverzeichnis.
-Danach führst du das Skript mit `bash` aus:
+Die folgende Anleitung erklärt am Beispiel von Übung 1, wie du die Lab-Skripte ausführen kannst.
+Wenn du der Anleitung oben genau gefolgt bist, liegen die Übungsverzeichnisse unter `~/kurs/linux-server-uebungen` und du kannst die Befehle eins-zu-eins übernehmen. Hast du die Kursunterlagen woanders abgelegt, musst du den Pfad entsprechend anpassen.
+
+Um das Lab-Skript zu starten, wechselst du zuerst in das passende Übungsverzeichnis:
 
 ```bash
-cd 02_Befehlssyntax_und_Dokumentation
-bash lab_uebung_2.sh
+cd ~/kurs/linux-server-uebungen/01_Dateimanagement
+```
+
+Anschließend startest du das Skript:
+
+```bash
+bash lab_uebung_1.sh
 ```
 
 Standardmäßig wird das Lab unter `~/labs` erstellt.
-Im Beispiel entsteht also das Verzeichnis `~/labs/Uebung-2-Lab`.
+Im Beispiel entsteht also das Verzeichnis `~/labs/Uebung-1-Lab`.
 
 Mit `--help` kannst du dir die Hilfe zu einem Lab-Skript anzeigen lassen:
 
 ```bash
-bash lab_uebung_2.sh --help
+bash lab_uebung_1.sh --help
 ```
 
 Wenn ein Lab bereits existiert, wird es nicht automatisch überschrieben.
 Mit `--force` kannst du ein vorhandenes Lab bewusst zurücksetzen:
 
 ```bash
-bash lab_uebung_2.sh --force
+bash lab_uebung_1.sh --force
 ```
 
 Mit `--fresh` kannst du eine zusätzliche neue Kopie erzeugen:
 
 ```bash
-bash lab_uebung_2.sh --fresh
+bash lab_uebung_1.sh --fresh
 ```
 
 Nutze `--force` nur, wenn du sicher bist, dass du das vorhandene Lab zurücksetzen möchtest.

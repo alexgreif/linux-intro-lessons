@@ -3,13 +3,11 @@
 In dieser Aufgabe übst du Befehle zur Navigation und zur Ausgabe von Metadaten.
 Dabei erhältst du einen ersten Einblick in den **Filesystem Hierarchy Standard (FHS)**, also in die typische Verzeichnisstruktur von Linux-Systemen. Wir betrachten dazu das Home-Verzeichnis, das Root-Verzeichnis, `/home`, `/var`, `/etc` und `/bin`.
 
-Arbeite in dieser Aufgabe nur lesend: Du sollst Dateien und Verzeichnisse nur ansehen, durchsuchen und Informationen über sie ausgeben. Erstelle, verschiebe, benenne und lösche nichts.
-
 ## 1. Startpunkt und Home-Verzeichnis
 
-Zu Beginn orientierst du dich in dem Verzeichnis, in dem dein Terminal startet.
+Zu Beginn orientierst du dich in dem Verzeichnis, in dem du nach dem Login landest.
 
-**1.1** Öffne ein Terminal. In welchem Verzeichnis befindest du dich direkt nach dem Öffnen?
+**1.1** Melde dich an deiner Ubuntu-Server-VM an. In welchem Verzeichnis befindest du dich direkt nach dem Login?
 
 **1.2** Verschaffe dir einen Überblick über den Inhalt dieses Verzeichnisses.
 
@@ -43,9 +41,11 @@ In `/etc`, häufig "etsy" ausgesprochen, findest du viele systemweite Konfigurat
 
 **5.1** Begib dich in das Verzeichnis `/etc`. Welche Dateiendungen kommen dort häufig vor? Wofür könnten diese Endungen stehen? Untersuche bei einigen Beispielen auch den Dateityp.
 
-**5.2** `/etc` enthält systemweite Konfigurationsdateien. Einige davon werden wir später noch genauer betrachten, zum Beispiel `passwd`, `shadow`, `sudoers`, `hosts`, `hostname` und `fstab`. Schaue dir von mehreren dieser Dateien Größe und Dateityp an.
+**5.2** `/etc` enthält systemweite Konfigurationsdateien. Einige davon werden wir später noch genauer betrachten, zum Beispiel `passwd`, `shadow`, `sudoers`, `hosts`, `hostname` und `fstab`. Untersuche Größe und Dateityp dieser Dateien.
 
-**5.3** Lasse dir alle Dateien mit der Endung `.conf` in `/etc` und seinen Unterverzeichnissen ausgeben.
+**5.3** Nutze `find`, um in `/etc/systemd` nach einer Datei mit dem Namen `system.conf` zu suchen.
+
+**5.4** Finde alle Dateien mit der Endung `.conf` in `/etc` und seinen Unterverzeichnissen.
 
 ## 6. Größenvergleich und Sonderfall bin
 

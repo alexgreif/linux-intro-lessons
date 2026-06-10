@@ -16,9 +16,8 @@ Für diese Übung benötigst du die folgenden Dateien:
 ## Vorgehen
 
 1. Lies zuerst die [Kurzreferenz](Kurzreferenz.md).
-2. Bearbeite Aufgabe 1.
-3. Führe das Lab-Skript aus.
-4. Bearbeite Aufgabe 2.
+2. Führe das Lab-Skript aus: `bash lab_uebung_2.sh`. Siehe dazu auch den [Abschnitt zu Lab-Skripten in der README im Hauptverzeichnis](../README.md#lab-skripte).
+3. Bearbeite die Aufgaben.
 
 ## Lernziele
 

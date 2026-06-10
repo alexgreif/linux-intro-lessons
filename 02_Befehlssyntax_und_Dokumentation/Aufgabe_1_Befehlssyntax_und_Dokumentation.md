@@ -65,23 +65,21 @@ Jetzt wendest du bekannte Optionen an Befehlen an, die Dateien oder Verzeichniss
 
 In diesem Abschnitt vergleichst du Dateigröße, belegten Speicherplatz und Metadaten.
 
-**5.1** Vergleiche `du /etc/apt` mit `du -a /etc/apt` und `du -s /etc/apt`. Was bewirken die Flags?
+**5.1** Wenn du `du` auf ein Verzeichnis anwendest, wird per Default neben dem belegten Speicherplatz des Verzeichnisses selbst, auch der von jedem Unterverzeichnis ausgegeben. Überprüfe dies, indem du `du /etc/apt` ausführst und dir die Ausgabe anschaust.
 
-**5.2** Wenn du `du` auf ein Verzeichnis anwendest, wird per Default neben dem belegten Speicherplatz des Verzeichnisses selbst, auch der von jedem Unterverzeichnis ausgegeben. Überprüfe dies, indem du `du /etc/apt` ausführst und dir die Ausgabe anschaust.
+**5.2** Lies in der `du`-manpage nach, was die Flags `-a` und `-s` bewirken. Probiere sie anschließend wieder am Verzeichnis `/etc/apt` aus.
 
-**5.3** Lies in der `du`-manpage nach, was die Flags `-a` und `-s` bewirken. Probiere sie anschließend wieder am Verzeichnis `/etc/apt` aus.
+**5.3** Untersuche die Datei `~/.bashrc` mit `stat` und `du`. Vergleiche die ausgegebenen Größen.
 
-**5.4** Untersuche die Datei `~/.bashrc` mit `stat` und `du`. Vergleiche die ausgegebenen Größen.
+**5.4** Finde in der manpage zu `du` heraus, was `--block-size` bewirkt. Lass dir den durch `~/.bashrc` belegten Speicherplatz in Bytes ausgeben.
 
-**5.5** Finde in der manpage zu `du` heraus, was `--block-size` bewirkt. Lass dir den durch `~/.bashrc` belegten Speicherplatz in Bytes ausgeben.
+**5.5** Finde in der manpage zu `du` heraus, was `--apparent-size` bewirkt und wende es auf `~/.bashrc` an.
 
-**5.6** Finde in der manpage zu `du` heraus, was `--apparent-size` bewirkt und wende es auf `~/.bashrc` an.
+**5.6** Kombiniere `--block-size 1` und `--apparent-size`. Vergleiche die Ausgabe mit der durch `stat ~/.bashrc` ausgegebenen Größe. Vergleiche darüber hinaus mit der Ausgabe von `du -b ~/.bashrc` und schaue die Bedeutung der `-b`-Option in der manpage nach.
 
-**5.7** Kombiniere `--block-size 1` und `--apparent-size`. Vergleiche die Ausgabe mit der durch `stat ~/.bashrc` ausgegebenen Größe. Vergleiche darüber hinaus mit der Ausgabe von `du -b ~/.bashrc` und schaue die Bedeutung der `-b`-Option in der manpage nach.
+**5.7** Vergleiche die Ausgaben von `du -b ~/.bashrc` und `du -bh ~/.bashrc`.
 
-**5.8** Vergleiche die Ausgaben von `du -b ~/.bashrc` und `du -bh ~/.bashrc`.
-
-**5.9** Erkläre in 2-3 Sätzen, warum `stat` und `du` unterschiedliche Informationen anzeigen können.
+**5.8** Erkläre in 2-3 Sätzen, warum `stat` und `du` unterschiedliche Informationen anzeigen können.
 
 ## 6. Weitere Hilfen im Terminal
 
@@ -99,6 +97,8 @@ bash lab_uebung_2.sh
 **6.3** Lasse dir nur die **Kurzbeschreibung** zu `find` ausgeben. Welche Information erhältst du?
 
 **6.4** Durchsuche die Kurzbeschreibungen der manpages nach dem Begriff `password`. Schaue dir die Ergebnisse kurz an.
+
+Die nächste Aufgabe findet im Lab-Verzeichnis statt.
 
 **6.5** Du hast zwei Versionen einer Textdatei: `~/labs/Uebung-2-Lab/config_v1.txt` und `~/labs/Uebung-2-Lab/config_v2.txt`.
 Du möchtest wissen, in welchen Zeilen sich die beiden Dateien unterscheiden, hast aber den passenden Befehl vergessen.
