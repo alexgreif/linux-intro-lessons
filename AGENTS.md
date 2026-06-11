@@ -48,6 +48,8 @@ Ein Vollscan aller Übungen ist nicht nötig; orientiere dich an den Dateien, di
 - Halte `Kurzreferenz.md` kompakt; sie ist Zusammenfassung und Nachschlagehilfe, kein Lehrbuch.
 - Formuliere Aufgaben beobachtbar und klar; erzwinge keine Frage, wenn ein Arbeitsauftrag besser ist.
 - Schreib- und Löschoperationen dürfen nur in Home- oder Lab-Verzeichnissen stattfinden.
+- Vermeide übertriebene Sicherheitsbelehrungen und redundante Warnhinweise in Schülerdokumenten. Die Übungen laufen auf lokalen VMs; Fehler dürfen dort als Lerngelegenheiten passieren.
+- Erzeuge echte Handlungskompetenz statt künstlicher Sicherheit: Aufgaben sollen Schüler zunehmend ohne unnötige Guardrails arbeiten lassen.
 
 ## Lab-Regeln
 

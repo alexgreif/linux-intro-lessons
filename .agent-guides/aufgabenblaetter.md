@@ -348,6 +348,9 @@ Vergleiche die beiden Ausgaben. Notiere einen Unterschied, der für die weitere 
 
 Befehlsvorgaben müssen bewusst dosiert werden.
 Eine Aufgabe soll nicht automatisch die vollständige Befehlszeile enthalten, nur weil ein bestimmter Befehl oder Operator verwendet werden soll.
+Wenn eine Kurzreferenz bereits eine Befehlstabelle enthält, sollen Aufgaben diese Tabelle nicht durchgehend in Arbeitsaufträgen nacherzählen.
+Prüfe jede explizite Befehlsnennung darauf, ob sie wirklich Beobachtbarkeit oder eine gezielte Lernhandlung unterstützt.
+Gib Befehle nicht nur deshalb vor, weil eine Handlung systemnah ist oder Fehler möglich sind.
 
 Unterscheide drei Stufen:
 
@@ -407,8 +410,15 @@ Warum gut:
 - Der minimale Unterschied zwischen den Befehlen ist der Untersuchungsgegenstand.
 - Die Schüler sollen nicht selbst einen Befehl finden, sondern einen Sonderfall beobachten.
 
-Prüfe beim Erstellen neuer Aufgaben besonders kritisch, ob eine vollständige Befehlszeile wirklich nötig ist.
+Prüfe beim Erstellen neuer Aufgaben besonders kritisch, ob eine vollständige Befehlszeile oder auch nur eine konkrete Befehlsnennung wirklich nötig ist.
 Wenn ein Arbeitsauftrag auch mit Handlung, Ziel, Pfaden und ggf. genanntem Werkzeug verständlich ist, ist diese offenere Form meistens besser.
+
+Führe nach dem ersten Draft eine eigene Befehlsvorgaben-Runde durch:
+
+- Welche Befehle stehen explizit im Aufgabenblatt?
+- Sind diese Befehle neu, syntaktisch ungewohnt, Untersuchungsgegenstand oder für eine konkrete Beobachtung nötig?
+- Könnte der Arbeitsauftrag stattdessen Ziel, Objekt und Kontrollpunkt nennen?
+- Werden Befehle nur deshalb genannt, weil sie in der Kurzreferenz gerade sichtbar sind?
 
 ## Rechercheaufgaben
 
@@ -426,6 +436,8 @@ So erhalten Schüler Suchbegriffe, müssen die Bedeutung aber selbst erschließe
 
 - Schreib- und Löschoperationen nur in Home- oder Lab-Verzeichnissen verlangen.
 - Systempfade wie `/etc` oder `/var/log` nur lesend untersuchen lassen.
+- Keine redundanten Sicherheitsbelehrungen einbauen, wenn der Arbeitsauftrag bereits klar begrenzt, was getan werden soll.
+- Lokale VMs sind Lernräume. Aufgaben sollen echte Admin-Handlungskompetenz aufbauen, nicht jeden möglichen Fehler durch zusätzliche Warnhinweise, Guardrails oder Schritt-für-Schritt-Absicherungen verhindern.
 - Bei verändernden `find -exec`-Aufgaben den Lab-Bereich klar nennen.
 - Weisen Aufgaben auf Zugriffsmeldungen hin, soll klar sein, ob diese nur beobachtet, ausgeblendet oder bewusst mit `sudo` untersucht werden.
 - `sudo` nicht inflationär empfehlen.

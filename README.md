@@ -10,6 +10,10 @@ Die Übungen sind nach Themen sortiert und bauen schrittweise aufeinander auf.
 - `02_Befehlssyntax_und_Dokumentation/`: Befehlssyntax, Optionen und Dokumentation im Terminal nutzen
 - `03_Textverarbeitung_im_Terminal/`: Textdateien anzeigen, Ausgaben umleiten und Terminaleditoren üben
 - `04_Shell_Umgebung_und_Konfiguration/`: Shell-Umgebung, Variablen und einfache Shell-Konfiguration verstehen
+- `05_Sudo_und_Package_Management/`: Admin-Rechte mit `sudo` nutzen und Pakete mit `apt` verwalten
+- `06_SSH_praktisch_nutzen/`: per SSH auf die Ubuntu-Server-VM zugreifen und Remote-Sitzungen nutzen
+- `07_Nutzer_Gruppen_und_Sudo/`: Nutzer, Gruppen und `sudo` auf Einstiegsebene verwalten
+- `08_Dateiberechtigungen/`: Besitzer, Gruppen und Zugriffsrechte von Dateien und Verzeichnissen verwalten
 
 Die Verzeichnisse, deren Namen mit einer Zahl beginnen, sind die eigentlichen Übungen.
 Öffne zuerst die `README.md` im jeweiligen Übungsverzeichnis.

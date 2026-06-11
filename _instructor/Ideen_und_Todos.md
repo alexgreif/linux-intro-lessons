@@ -14,19 +14,67 @@ Nutze dieses Dokument, wenn eine Idee noch nicht konkret genug für eine Übungs
 
 ## Offene Ideen
 
-### Übung 4: Shell-Umgebung und Konfiguration
+### Komprimierter Admin-Basisblock
 
-- Systematische Behandlung von Umgebungsvariablen und Konfigurationsdateien.
-- Übergang von Übung 3 zu Übung 4 mit Kontext zu Terminal vs Shell, Shell als Prozess und Linux/GNU.
-- Verschiedene Shells als praktisches Beispiel für den Unterschied zwischen Terminal und Shell nutzen.
-- Unterschied zwischen Shell-Builtins und Programmen aufgreifen, z. B. mit `type`, `which` und ggf. `whereis`.
-- Prüfen, ob eine echte, geführte Konfigurationsänderung mit klarem Rückweg sinnvoll ist, damit Konfigurationsdateien nicht künstlich mystifiziert werden.
-- Mögliche Variablen: `PATH`, `HOME`, `USER`, `SHELL`, `EDITOR`, `VISUAL`, ggf. `PAGER`.
-- Mögliche Dateien: `.bashrc`, `.profile`, `/etc/environment`, ggf. `/etc/profile`.
+- Übungen 5 bis 11 sollen deutlich kürzer bleiben als die ersten Grundlagenübungen.
+- Wichtigste Reihenfolge: zuerst `sudo` und Package Management, danach SSH, Nutzer/Gruppen/`sudo`, Berechtigungen, Prozesse/Dienste, Netzwerk-Basics und einfache Pipe-Werkzeuge.
+- Für neue Übungen jeweils prüfen, ob ein einzelnes Aufgabenblatt reicht.
+- Labs nur einsetzen, wenn echte Schreib- oder Löschoperationen sonst zu riskant oder zu künstlich wären.
+- Root-`README.md` bei neuen Übungen mitführen, sobald die Übungsverzeichnisse angelegt werden.
+
+### Übung 5: `sudo` und Package Management
+
+- `sudo` als praktisches Admin-Werkzeug einführen, ohne sudoers im Detail zu behandeln.
+- `apt update`, `apt upgrade`, `apt install` und `apt remove` auf das notwendige Minimum reduzieren.
+- Paketquellen, Repositories, PPAs, Signaturen und Pinning nicht vertiefen.
+- Geeignetes Beispielpaket wählen, das gefahrlos installiert und entfernt werden kann.
+
+### Übung 6: SSH praktisch nutzen
+
+- SSH per Passwort-Login mit Standardeinstellungen nutzen.
+- IP-Adresse der VM finden und Verbindung vom Hostsystem oder einer zweiten Maschine herstellen.
+- Host-Key-Meldung nur auf Überblicksebene einordnen.
+- Mehrere Sitzungen nutzen und mit `who`, `w`, `tty`, `hostname` oder ähnlichen Befehlen beobachten.
+- Public-Key-Authentifizierung, `sshd_config`, Portwechsel und Härtung verschieben.
+
+### Übung 7: Nutzer, Gruppen und `sudo`
+
+- Wichtigste Inhalte für einfache Serveradministration: aktueller Nutzer, Gruppen, Testnutzer, Gruppenmitgliedschaften.
+- Mögliche Befehle: `whoami`, `id`, `groups`, `getent passwd`, `getent group`, `sudo adduser`, `sudo usermod -aG`, `sudo deluser`.
+- Vorsichtig planen, damit Schüler nicht versehentlich ihren Hauptnutzer aus wichtigen Gruppen entfernen.
+- `sudo`-Gruppe als praktisches Konzept einordnen.
+
+### Übung 8: Dateiberechtigungen
+
+- `ls -l` lesen, Besitzer, Gruppe und andere unterscheiden.
+- `r`, `w` und `x` für Dateien und Verzeichnisse auf Einstiegsebene erklären.
+- Einfache symbolische Rechteänderungen mit `chmod` üben.
+- `chown` und `chgrp` nur so weit behandeln, wie es für spätere Dienste nötig ist.
+- Oktale Rechte höchstens kurz zeigen, aber nicht zum Schwerpunkt machen.
+
+### Übung 9: Prozesse und Dienste
+
+- `ps` mit den wichtigsten Flags, Prozess-ID und `kill`.
+- `systemctl status`, `start`, `stop`, `restart`, `enable` und `disable` nur auf Basisebene.
+- Wenn möglich an einem konkreten Dienst arbeiten, ohne SSH-Verbindungen versehentlich abzuschneiden.
+- `journalctl` höchstens kurz zeigen oder für spätere Dienste aufheben.
+
+### Übung 10: Netzwerk-Basics in der Shell
+
+- IP-Adresse, Interface, Default Route und DNS grob prüfen.
+- Mögliche Befehle: `ip a`, `ip route`, `ping`, `resolvectl status`, ggf. `ss -tulpn`.
+- Keine Subnetting-Vertiefung und keine dauerhafte Netplan-Konfiguration.
+
+### Übung 11: Pipes, `grep` und `sort`
+
+- Pipe-Prinzip an echten Admin-Ausgaben zeigen.
+- `grep` und `sort` ohne viele Optionen verwenden.
+- Optional `wc -l`, wenn es sich aus einer Aufgabe natürlich ergibt.
+- Mögliche Anknüpfungspunkte: `apt list --installed`, `getent passwd`, `ps`, `systemctl`.
 
 ### Später: Textverarbeitung für Fortgeschrittene
 
-- Voraussichtlich als spätere Übung, eventuell Übung 5.
+- Voraussichtlich keine eigene Grundlagenübung mehr vor den Services.
 - Themen: `grep`, Pipes und weitere Befehle zur fortgeschrittenen Textverarbeitung.
 - Neben Logs können auch die Kursunterlagen selbst als Suchmaterial genutzt werden.
 - Besonders `grep` eignet sich, um nach Stichwörtern in den Unterlagen zu suchen, die nicht im Dateinamen vorkommen.
@@ -46,15 +94,9 @@ Nutze dieses Dokument, wenn eine Idee noch nicht konkret genug für eine Übungs
 - Berechtigungen erst nach Nutzer- und Gruppenkonzepten einführen oder eng damit verzahnen.
 - Mögliche Themen: Eigentümer, Gruppe, andere, Lesen, Schreiben, Ausführen, `chmod`, `chown`, `chgrp`, ggf. symbolische und oktale Schreibweise.
 
-### Später: Package Management
-
-- Pakete installieren, aktualisieren, suchen und entfernen.
-- Sinnvoll vor SSH, Netzwerkdiensten und konkreten Serverdiensten, weil viele spätere Aufgaben zusätzliche Pakete benötigen.
-- Mögliche Werkzeuge: `apt`, `apt update`, `apt install`, `apt remove`, `apt search`, ggf. `systemctl` nur dort, wo installierte Dienste direkt betroffen sind.
-- Filterung von `apt`-Ausgaben muss nicht schon hier Schwerpunkt sein; sie kann später bei Textverarbeitung und Pipes wieder aufgegriffen werden.
-
 ### Später: SSH und Remote-Arbeit
 
+- SSH wird im komprimierten Block zunächst als Übung 6 praktisch behandelt.
 - SSH als Einstieg in realistischere Serveradministration behandeln.
 - SSH kann früh als praktisches Werkzeug eingeführt werden, auch wenn Netzwerk, Dienste und Absicherung erst später systematisch behandelt werden.
 - Mögliche Themen im ersten SSH-Block: lokal vs remote, SSH-Client vs SSH-Server, Verbindung zur VM, Host-Key-Meldung, Login mit bestehendem Nutzer, Remote-Befehle, mehrere Sitzungen, `who`, `w`, `tty`, `hostname`, `ip a`.
@@ -64,6 +106,7 @@ Nutze dieses Dokument, wenn eine Idee noch nicht konkret genug für eine Übungs
 
 ### Später: Skripte, Exit Codes und Cronjobs
 
+- Im komprimierten Kursverlauf vorerst übersprungen.
 - Einfache Shell-Skripte als Brücke zur Automatisierung einführen.
 - Mögliche Themen: Shebang, Skript ausführbar machen, Exit Codes, `$?`, `&&`, `||`.
 - Noch keine umfangreiche Behandlung von Schleifen oder Kontrollstrukturen nötig.
@@ -72,6 +115,7 @@ Nutze dieses Dokument, wenn eine Idee noch nicht konkret genug für eine Übungs
 
 ### Später: systemd und Dienstverwaltung
 
+- systemd wird im komprimierten Block zunächst als Übung 9 auf Basisebene behandelt.
 - Dienste allgemein behandeln, bevor konkrete Serverdienste eingerichtet werden.
 - Mögliche Themen: Dienststatus prüfen, Dienste starten, stoppen, neu laden, aktivieren und deaktivieren.
 - Mögliche Befehle: `systemctl status`, `systemctl start`, `systemctl stop`, `systemctl reload`, `systemctl restart`, `systemctl enable`, `systemctl disable`.
@@ -79,9 +123,9 @@ Nutze dieses Dokument, wenn eine Idee noch nicht konkret genug für eine Übungs
 
 ### Später: Netzwerk, Absicherung und Datenträger
 
-- Netzwerkgrundlagen vor konkreten Netzwerkdiensten einordnen.
-- Absicherung später systematisch behandeln: Firewall, SSH-Abhärtung, iptables bzw. moderne Alternativen und Network-Layer-Abhärtung.
-- Disk- und Partitionsmanagement als eigenes Grundlagen- oder Administrationsmodul planen.
+- Netzwerkgrundlagen werden im komprimierten Block nur als Diagnose-Basics behandelt.
+- Absicherung vorerst überspringen oder bei SSH und `sudo` nur minimal als Vorsichtshinweis einordnen.
+- Disk- und Partitionsmanagement vorerst überspringen; ggf. nur `df -h` als Diagnosebefehl bei konkreten Diensten zeigen.
 
 ### Später: Serverdienste
 

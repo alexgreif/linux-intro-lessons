@@ -68,6 +68,8 @@ Sie sollen schnell auffindbare Referenzblöcke bilden.
 ## Inhaltliche Regeln
 
 - Nimm nur Begriffe, Konzepte, Befehle und Syntaxformen auf, die für die Aufgaben relevant sind.
+- Formuliere diese Inhalte als allgemein nützliches Fach- und Admin-Wissen, nicht so, als seien sie nur wegen einer konkreten Aufgabe relevant.
+- Vermeide Formulierungen wie “In dieser Übung ...”, wenn dadurch ein Konzept künstlich auf den Aufgabenrahmen verengt wird.
 - Führe Begriffe knapp und präzise ein.
 - Fasse Fakten und Zusammenhänge so zusammen, dass Schüler sie beim Bearbeiten oder späteren Wiederholen schnell wiederfinden.
 - Erkläre genug, damit Schüler die Aufgaben bearbeiten können, aber schreibe kein vollständiges Lehrbuch.
@@ -105,6 +107,15 @@ Gutes Muster:
 
 Tabellen sollen schnell scannbar bleiben.
 Beschreibungen sollen kurz sein und keine Aufgabenlösung ersetzen.
+
+Wenn eine Befehlstabelle vorhanden ist, soll der anschließende Fließtext die Befehle nicht noch einmal einzeln nacherzählen.
+Nutze den Fließtext vor allem für Konzepte, Zusammenhänge, Vorsichtshinweise und Einordnung.
+Verweise bei Bedarf knapp auf die Befehlstabelle, statt dieselben Befehle erneut zu erklären.
+Konkrete Befehle, Optionen oder Syntaxformen dürfen im Fließtext genannt werden, wenn dadurch ein Zusammenhang, eine Entscheidung oder eine Vorsichtsstelle erklärt wird.
+Sie sollen nicht nur wiederholt werden, weil sie in der Tabelle bereits vorkommen.
+
+In der Befehlsspalte steht normalerweise das eigentliche Werkzeug, nicht der komplette typische Aufruf.
+Wenn ein Befehl in der Praxis mit `sudo` ausgeführt wird, steht `sudo` im Beispiel, nicht im Befehlsnamen.
 
 Wenn es um Bedienung statt um Befehle geht, können ebenfalls Tabellen genutzt werden.
 Das passt besonders für Tasten, Modi, häufige Optionen, Umleitungen, wichtige Variablen, wichtige Dateien oder andere kompakte Syntaxreferenzen.
